@@ -1,4 +1,5 @@
-import * as T from './bibliotecas/three.module.min.js';
+// Renan | renancodando
+import * as T from '../../bibliotecas/three.module.min.js';
 
 export const ruidoNatural=`
 float acaso(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}

@@ -1,3 +1,4 @@
+// Renan | renancodando
 export const dominios = [
  {id:'sociedade',nome:'Sociedade',icone:'pessoas',cor:'#6d91d8',x:15,y:42,descricao:'As relações, as escolhas e as estruturas que desenham a vida em comunidade.',pergunta:'Como as nossas decisões transformam o lugar onde vivemos?',conexoes:['humanidades','geografia','tecnologia'],ideias:['Cidades e cidadania','Cultura e convivência','O mundo em transformação']},
  {id:'exatas',nome:'Ciências Exatas',icone:'atomo',cor:'#a69de9',x:30,y:23,descricao:'Padrões, números e fenômenos que nos ajudam a compreender o universo.',pergunta:'E se uma equação pudesse explicar o caminho de uma estrela?',conexoes:['tecnologia','vida','artes'],ideias:['Matemática em movimento','Forças e energia','Geometria da natureza']},
