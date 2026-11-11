@@ -52,13 +52,13 @@ async function montarTrilha(raiz,id,catalogo,mapa,definirTitulo){
  const [laboratoriosFeitos,projetosFeitos]=await Promise.all([listar('laboratorios'),listar('projetos')]);
  const ramos=(disciplina.jornada.ramos||[]).map(r=>({...r,dados:r.tipo==='laboratorio'?catalogo.laboratorios.find(l=>l.id===r.id):catalogo.projetos.find(p=>p.id===r.id),feito:r.tipo==='laboratorio'?laboratoriosFeitos.find(l=>l.id===r.id)?.atividadeGuiada:Boolean(projetosFeitos.find(p=>p.id===r.id)?.concluidoEm)})).filter(r=>r.dados);
  const nos=[...etapas.map((e,i)=>({tipo:'aula',chave:e.aula.chave,etapa:e,indice:i})),{tipo:'revisao',indice:etapas.length}];
- const alturaPasso=ramos.length?176:150,margem=90;
+ const alturaPasso=ramos.length?200:150,margem=80;
  const altura=margem*2+alturaPasso*(nos.length-1);
- const posicoes=nos.map((no,i)=>({x:i%2?72:28,y:margem+i*alturaPasso}));
+ const posicoes=nos.map((no,i)=>({x:i%2?74:26,y:margem+i*alturaPasso}));
  const caminho=posicoes.map((p,i)=>{if(!i)return `M${p.x} ${p.y}`;const a=posicoes[i-1];const c=(p.y-a.y)*0.55;return `C${a.x} ${a.y+c} ${p.x} ${p.y-c} ${p.x} ${p.y}`;}).join('');
  const concluidasAte=nos.findIndex(no=>no.tipo==='aula'&&!no.etapa.concluida);
  const comprimentoFeito=concluidasAte<0?1:concluidasAte/(nos.length-1);
- const posicaoRamo=ramo=>{const i=etapas.findIndex(e=>e.aula.chave===ramo.apos);if(i<0)return null;const base=posicoes[i];const mesmos=ramos.filter(r=>r.apos===ramo.apos);const k=mesmos.indexOf(ramo);return {x:base.x<50?base.x+30:base.x-30,y:base.y+68+k*54,base};};
+ const posicaoRamo=ramo=>{const i=etapas.findIndex(e=>e.aula.chave===ramo.apos);if(i<0)return null;const base=posicoes[i];const mesmos=ramos.filter(r=>r.apos===ramo.apos);const k=mesmos.indexOf(ramo);return {x:base.x<50?base.x+40:base.x-40,y:base.y+92+k*56,base};};
  const revisaoDisponivel=resumo.concluidas>=2;
  raiz.innerHTML=`<div class="pagina-ambiente pagina-trilha" style="--cor:${disciplina.cor}">
   <header class="cabecalho-ambiente"><nav class="caminho" aria-label="Você está em"><a href="/jornadas">Jornadas</a><span>›</span><em>${escapar(disciplina.nome)}</em></nav><p class="sobretitulo">JORNADA · ${escapar(disciplina.nome).toUpperCase()}</p><h1>${escapar(disciplina.jornada.titulo)}</h1><p class="introducao">${escapar(disciplina.jornada.descricao)}</p>

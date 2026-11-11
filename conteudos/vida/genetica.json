@@ -1,0 +1,406 @@
+{
+ "autoria": "Renan | renancodando",
+ "titulo": "Genética e hereditariedade",
+ "resumo": "Por que filhos se parecem com os pais, mas não são cópias? Nesta aula você entende o DNA como instrução, os genes como trechos dessa instrução, as leis de Mendel como probabilidades e o quadro de Punnett como ferramenta de previsão.",
+ "duracao": 35,
+ "nivel": 2,
+ "objetivos": [
+  "Descrever o DNA como sequência de bases que codifica proteínas.",
+  "Diferenciar gene, alelo, genótipo e fenótipo.",
+  "Aplicar a primeira lei de Mendel com o quadro de Punnett.",
+  "Interpretar proporções genéticas como probabilidades.",
+  "Reconhecer que muitos traços dependem de vários genes e do ambiente."
+ ],
+ "prerequisitos": [
+  "vida/celula"
+ ],
+ "conceitos": [
+  {
+   "id": "dna",
+   "nome": "DNA",
+   "definicao": "Molécula em dupla hélice formada por sequências de quatro bases (A, T, C, G). A ordem das bases codifica as instruções para fabricar proteínas."
+  },
+  {
+   "id": "gene-alelo",
+   "nome": "Gene e alelo",
+   "definicao": "Gene é um trecho de DNA que codifica uma característica. Alelos são as versões de um gene; cada pessoa tem dois alelos de cada gene, um de cada genitor."
+  },
+  {
+   "id": "genotipo-fenotipo",
+   "nome": "Genótipo e fenótipo",
+   "definicao": "Genótipo é o par de alelos que um indivíduo carrega (AA, Aa, aa). Fenótipo é a característica observável, resultado do genótipo e do ambiente."
+  },
+  {
+   "id": "dominante-recessivo",
+   "nome": "Dominante e recessivo",
+   "definicao": "O alelo dominante se manifesta no fenótipo mesmo com uma só cópia; o recessivo só aparece quando as duas cópias são recessivas (aa)."
+  },
+  {
+   "id": "lei-de-mendel",
+   "nome": "Primeira lei de Mendel",
+   "definicao": "Cada característica é determinada por dois fatores (alelos) que se separam na formação dos gametas; cada gameta recebe apenas um deles."
+  },
+  {
+   "id": "punnett",
+   "nome": "Quadro de Punnett",
+   "definicao": "Tabela que combina os gametas possíveis de dois genitores para calcular as probabilidades de cada genótipo e fenótipo na descendência."
+  }
+ ],
+ "relacionados": [
+  "vida/celula",
+  "exatas/probabilidade",
+  "vida/ecologia-evolucao",
+  "humanidades/conhecimento-ciencia"
+ ],
+ "laboratorios": [],
+ "blocos": [
+  {
+   "tipo": "texto",
+   "titulo": "Um manual escrito com quatro letras",
+   "html": "<p>Dentro do núcleo de cada célula há cerca de dois metros de DNA enrolados em 46 cromossomos. O DNA é uma dupla hélice cujos degraus são pares de bases: adenina com timina, citosina com guanina. A ordem das bases é a informação. Trechos dessa sequência, os <strong>genes</strong>, dizem como montar proteínas: enzimas que digerem, hormônios que sinalizam, pigmentos que colorem, fibras que sustentam.</p><p>O genoma humano tem cerca de vinte mil genes. Entre duas pessoas, as sequências diferem em uma fração pequena das bases, mas essa fração é suficiente para toda a diversidade de rostos, metabolismos e predisposições. Boa parte do DNA não codifica proteínas: regula quando e quanto cada gene é usado.</p>"
+  },
+  {
+   "tipo": "destaque",
+   "variante": "definicao",
+   "titulo": "Gene, alelo, genótipo, fenótipo",
+   "html": "<p>Um gene ocupa uma posição fixa em um cromossomo. Como herdamos um cromossomo de cada genitor, temos dois <strong>alelos</strong> de cada gene. O par de alelos é o <strong>genótipo</strong>; a característica visível é o <strong>fenótipo</strong>. Alelos podem ser iguais (homozigoto: AA ou aa) ou diferentes (heterozigoto: Aa).</p>"
+  },
+  {
+   "tipo": "texto",
+   "titulo": "O que Mendel contou nas ervilhas",
+   "html": "<p>Nos anos 1860, Gregor Mendel cruzou ervilhas de linhagens puras: todas de semente amarela com todas de semente verde. A primeira geração foi inteiramente amarela. O verde parecia ter sumido. Mas, cruzando essas plantas entre si, a geração seguinte mostrou 3 amarelas para cada 1 verde. O verde estava lá, escondido.</p><p>A explicação: cada planta carrega dois fatores (hoje, alelos) e passa apenas um a cada gameta. O alelo da cor amarela (A) é <strong>dominante</strong>: basta uma cópia para o fenótipo amarelo. O verde (a) é <strong>recessivo</strong>: só aparece em aa. Na primeira geração todas eram Aa; no cruzamento Aa × Aa, um quarto é aa, e aí o verde reaparece.</p>"
+  },
+  {
+   "tipo": "interativo",
+   "etapa": "explorar",
+   "componente": "punnett",
+   "titulo": "Monte quadros de Punnett",
+   "instrucao": "Comece com Aa × Aa e confira a proporção 3:1. Depois tente AA × aa (todos amarelos) e Aa × aa (metade a metade). Pergunte-se: em qual cruzamento o recessivo nunca aparece, mas continua presente?",
+   "parametros": {
+    "pai": "Aa",
+    "mae": "Aa",
+    "nomes": {
+     "dominante": "A",
+     "recessivo": "a",
+     "traco": "cor da semente",
+     "dom": "amarela",
+     "rec": "verde"
+    }
+   }
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Proporções são probabilidades",
+   "html": "<p>O quadro de Punnett diz que um casal Aa × Aa tem 1/4 de chance de cada filho ser aa. Não diz que, em quatro filhos, exatamente um será aa. Cada gestação é um sorteio independente, como no lançamento de uma moeda. Uma família pode ter três filhos aa seguidos; é improvável (1/64), não impossível. As proporções de Mendel aparecem com clareza nas centenas de plantas que ele contou, não em famílias pequenas.</p><p>O <strong>cruzamento-teste</strong> usa essa lógica para descobrir um genótipo oculto: cruza-se o indivíduo dominante de genótipo desconhecido com um recessivo (aa). Se algum descendente for recessivo, o genótipo era Aa.</p>"
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Além de um gene, uma letra",
+   "html": "<p>Nem toda herança é tão simples. Altura, cor da pele e pressão arterial dependem de dezenas de genes somados (herança poligênica) e do ambiente: nutrição, sol, hábitos. Em alguns genes, os dois alelos se expressam (codominância, como no grupo sanguíneo AB); em outros, o heterozigoto é intermediário. O sistema ABO envolve três alelos, embora cada pessoa carregue dois.</p><p>Por isso é um erro falar em “o gene da inteligência” ou “o gene da agressividade”. Os traços complexos emergem de redes de genes interagindo com a história de cada organismo. Modelos simples como o de Mendel são o primeiro degrau, não o retrato completo.</p>"
+  },
+  {
+   "tipo": "tabela",
+   "titulo": "Tipos de herança",
+   "cabecalho": [
+    "Tipo",
+    "Heterozigoto mostra",
+    "Exemplo"
+   ],
+   "linhas": [
+    [
+     "Dominância completa",
+     "o fenótipo dominante",
+     "cor da semente da ervilha"
+    ],
+    [
+     "Dominância incompleta",
+     "fenótipo intermediário",
+     "flor rosa a partir de vermelha × branca (maravilha)"
+    ],
+    [
+     "Codominância",
+     "os dois fenótipos",
+     "grupo sanguíneo AB"
+    ],
+    [
+     "Poligênica",
+     "gradação contínua",
+     "altura, cor da pele"
+    ]
+   ]
+  },
+  {
+   "tipo": "destaque",
+   "variante": "interpretacao",
+   "titulo": "Fato, modelo e interpretação",
+   "html": "<p>Que o DNA carrega informação hereditária é fato estabelecido. As leis de Mendel são um modelo que descreve bem traços controlados por um gene com dominância completa. Afirmações sobre “genes de comportamento” costumam ser interpretações apressadas de correlações estatísticas, e merecem a pergunta: quantos genes, quanta influência, em quais ambientes?</p>"
+  },
+  {
+   "tipo": "pergunta",
+   "enunciado": "Dois pais de olhos castanhos podem ter um filho de olhos azuis?",
+   "resposta": "<p>Sim. Em um modelo simplificado em que castanho é dominante, se ambos forem heterozigotos (Aa), há 1/4 de chance de um filho aa, de olhos azuis. A cor dos olhos, na verdade, envolve mais de um gene, mas o princípio da herança oculta de alelos recessivos é o mesmo.</p>"
+  }
+ ],
+ "exercicios": [
+  {
+   "id": "e1",
+   "tipo": "numerica",
+   "conceito": "punnett",
+   "enunciado": "<p>No cruzamento Aa × aa, qual é a probabilidade de um descendente apresentar o fenótipo recessivo? Responda como decimal.</p>",
+   "resposta": 0.5,
+   "tolerancia": 0.001,
+   "feedback": {
+    "correta": "Os gametas do Aa são A ou a; os do aa são sempre a. Metade dos descendentes é Aa, metade é aa.",
+    "faixas": [
+     {
+      "min": 0.24,
+      "max": 0.26,
+      "texto": "1/4 é a proporção de aa em Aa × Aa. Aqui um dos genitores é aa: todos os seus gametas carregam a."
+     },
+     {
+      "min": 0.74,
+      "max": 0.76,
+      "texto": "3/4 é a proporção de dominantes em Aa × Aa. Monte o quadro com Aa e aa."
+     }
+    ]
+   },
+   "dicas": [
+    "Liste os gametas: Aa produz A e a; aa produz só a.",
+    "Combine: Aa, Aa, aa, aa."
+   ]
+  },
+  {
+   "id": "e2",
+   "tipo": "multipla-escolha",
+   "conceito": "genotipo-fenotipo",
+   "enunciado": "<p>Uma planta de flores amarelas tem genótipo desconhecido (AA ou Aa). Qual cruzamento permite descobrir?</p>",
+   "opcoes": [
+    "Com outra planta AA",
+    "Com uma planta aa",
+    "Com uma planta Aa",
+    "Nenhum cruzamento permite"
+   ],
+   "correta": 1,
+   "feedback": {
+    "correta": "No cruzamento-teste com aa, se aparecer algum descendente verde (aa), a planta era Aa; se todos forem amarelos em grande número, provavelmente era AA.",
+    "incorreta": "Procure um cruzamento em que os dois genótipos possíveis produzam resultados diferentes.",
+    "porOpcao": {
+     "0": "Com AA, todos os descendentes serão amarelos nos dois casos: não distingue.",
+     "2": "Com Aa, AA × Aa dá só amarelos e Aa × Aa dá 3:1. Funciona, mas o recessivo aa é o teste clássico, porque revela o genótipo com qualquer descendente recessivo.",
+     "3": "O cruzamento-teste existe justamente para isso."
+    }
+   },
+   "dicas": [
+    "Qual genitor só produz gametas a?",
+    "Se algum filho for aa, de onde veio o segundo a?"
+   ]
+  },
+  {
+   "id": "e3",
+   "tipo": "lacunas",
+   "conceito": "gene-alelo",
+   "enunciado": "<p>Complete com os termos corretos.</p>",
+   "texto": "Um {{a}} é um trecho de DNA que codifica uma característica; suas versões são chamadas de {{b}}. O par de alelos de um indivíduo é o {{c}}, e a característica observável é o {{d}}.",
+   "lacunas": {
+    "a": [
+     "gene"
+    ],
+    "b": [
+     "alelos"
+    ],
+    "c": [
+     "genótipo",
+     "genotipo"
+    ],
+    "d": [
+     "fenótipo",
+     "fenotipo"
+    ]
+   },
+   "banco": [
+    "gene",
+    "alelos",
+    "genótipo",
+    "fenótipo",
+    "cromossomo"
+   ],
+   "feedback": {
+    "correta": "Gene é a posição; alelos são as versões; genótipo é o que se carrega; fenótipo é o que se vê.",
+    "incorreta": "Separe: o trecho de DNA, suas versões, o par carregado e a característica visível."
+   },
+   "dicas": [
+    "Alelos são variantes de um mesmo gene.",
+    "O que se observa é o fenótipo."
+   ]
+  },
+  {
+   "id": "e4",
+   "tipo": "verdadeiro-falso",
+   "conceito": "lei-de-mendel",
+   "enunciado": "<p>Um casal heterozigoto (Aa × Aa) tem quatro filhos. Julgue.</p>",
+   "afirmacoes": [
+    {
+     "texto": "Exatamente um dos quatro filhos será aa.",
+     "valor": false,
+     "explicacao": "1/4 é a probabilidade de cada filho; em quatro filhos, o número de aa pode ser 0, 1, 2, 3 ou 4."
+    },
+    {
+     "texto": "Cada filho tem 3/4 de chance de mostrar o fenótipo dominante.",
+     "valor": true,
+     "explicacao": "AA, Aa e aA mostram o dominante: 3 em 4."
+    },
+    {
+     "texto": "Se os três primeiros filhos foram aa, o quarto tem menos chance de ser aa.",
+     "valor": false,
+     "explicacao": "Cada gestação é independente; a chance continua 1/4."
+    },
+    {
+     "texto": "A chance de os quatro filhos serem dominantes é (3/4)⁴.",
+     "valor": true,
+     "explicacao": "Eventos independentes: multiplicam-se as probabilidades, cerca de 32%."
+    }
+   ],
+   "feedback": {
+    "correta": "Proporções mendelianas são probabilidades por indivíduo, não garantias por família.",
+    "incorreta": "Lembre a aula de probabilidade: eventos independentes não se compensam."
+   },
+   "dicas": [
+    "Cada filho é um sorteio independente.",
+    "Proporção não é contagem garantida."
+   ]
+  },
+  {
+   "id": "e5",
+   "tipo": "multipla-escolha",
+   "conceito": "dominante-recessivo",
+   "enunciado": "<p>Na planta maravilha, o cruzamento de flores vermelhas (VV) com brancas (BB) produz flores rosa. Que tipo de herança é esse?</p>",
+   "opcoes": [
+    "Dominância completa",
+    "Dominância incompleta",
+    "Codominância",
+    "Herança poligênica"
+   ],
+   "correta": 1,
+   "feedback": {
+    "correta": "O heterozigoto tem fenótipo intermediário: nenhum alelo domina completamente.",
+    "incorreta": "Observe o heterozigoto: é igual a um dos pais, intermediário, ou mostra os dois traços?",
+    "porOpcao": {
+     "0": "Com dominância completa, o híbrido seria vermelho ou branco, não rosa.",
+     "2": "Na codominância os dois fenótipos aparecem lado a lado (como manchas), não misturados em um intermediário.",
+     "3": "Um único gene com dois alelos explica o resultado; não é necessário invocar vários genes."
+    }
+   },
+   "dicas": [
+    "Rosa é um meio-termo entre vermelho e branco.",
+    "Intermediário é a palavra-chave."
+   ]
+  },
+  {
+   "id": "e6",
+   "tipo": "problema",
+   "conceito": "punnett",
+   "enunciado": "<p>Em uma espécie, pelagem preta (P) é dominante sobre branca (p). Dois animais heterozigotos se cruzam e têm 40 filhotes.</p>",
+   "etapas": [
+    {
+     "enunciado": "Qual fração dos filhotes é esperada com pelagem branca?",
+     "rotulo": "fração",
+     "resposta": 0.25,
+     "tolerancia": 0.001,
+     "explicacao": "pp ocorre em 1 de 4 combinações.",
+     "feedback": "Monte o quadro Pp × Pp."
+    },
+    {
+     "enunciado": "Quantos filhotes brancos são esperados, em média?",
+     "rotulo": "filhotes",
+     "resposta": 10,
+     "tolerancia": 0,
+     "explicacao": "0,25 × 40 = 10.",
+     "feedback": "Multiplique a fração pelo total."
+    },
+    {
+     "enunciado": "Entre os filhotes pretos, qual fração é heterozigota?",
+     "rotulo": "fração",
+     "resposta": 0.6667,
+     "tolerancia": 0.002,
+     "explicacao": "Dos 3 genótipos pretos (PP, Pp, pP), 2 são heterozigotos: 2/3.",
+     "feedback": "Olhe só para as células do quadro com fenótipo preto."
+    }
+   ],
+   "feedback": {
+    "correta": "Entre os dominantes, a maioria carrega o alelo recessivo oculto: é por isso que traços recessivos persistem nas populações."
+   },
+   "dicas": [
+    "Quadro Pp × Pp: PP, Pp, pP, pp.",
+    "“Entre os pretos” restringe o espaço amostral a três células."
+   ]
+  }
+ ],
+ "pratica": {
+  "titulo": "Investigar um genótipo desconhecido",
+  "descricao": "<p>Use o quadro de Punnett para planejar um cruzamento-teste. Suponha que você tem uma ervilha amarela e não sabe se é AA ou Aa. Nas anotações, registre o que esperaria observar em cada caso e quantos descendentes precisaria para ter confiança razoável.</p>",
+  "passos": [
+   "Monte AA × aa e registre as proporções esperadas.",
+   "Monte Aa × aa e registre as proporções.",
+   "Explique como uma única semente verde na descendência resolve a dúvida.",
+   "Usando probabilidade, estime: se a planta for Aa, qual a chance de 5 descendentes serem todos amarelos? (1/2)⁵."
+  ],
+  "componente": "punnett",
+  "parametros": {
+   "pai": "Aa",
+   "mae": "aa",
+   "nomes": {
+    "dominante": "A",
+    "recessivo": "a",
+    "traco": "cor da semente",
+    "dom": "amarela",
+    "rec": "verde"
+   }
+  },
+  "verificacao": {
+   "tipo": "checklist",
+   "itens": [
+    "Registrei as proporções de AA × aa (todos amarelos).",
+    "Registrei as proporções de Aa × aa (1:1).",
+    "Expliquei por que um descendente verde prova que a planta era Aa.",
+    "Calculei (1/2)⁵ ≈ 3% como a chance de cinco amarelos seguidos vindo de Aa."
+   ]
+  }
+ },
+ "revisao": [
+  {
+   "pergunta": "O que é um alelo?",
+   "resposta": "<p>Uma das versões possíveis de um gene. Cada indivíduo carrega dois alelos de cada gene, um de cada genitor.</p>",
+   "conceito": "gene-alelo"
+  },
+  {
+   "pergunta": "Qual é a diferença entre genótipo e fenótipo?",
+   "resposta": "<p>Genótipo é o par de alelos (AA, Aa, aa); fenótipo é a característica observável, resultado do genótipo e do ambiente.</p>",
+   "conceito": "genotipo-fenotipo"
+  },
+  {
+   "pergunta": "Que proporção fenotípica resulta de Aa × Aa com dominância completa?",
+   "resposta": "<p>3 dominantes para 1 recessivo.</p>",
+   "conceito": "punnett"
+  },
+  {
+   "pergunta": "Enuncie a primeira lei de Mendel.",
+   "resposta": "<p>Cada característica é condicionada por dois fatores que se separam na formação dos gametas; cada gameta recebe um só.</p>",
+   "conceito": "lei-de-mendel"
+  },
+  {
+   "pergunta": "Por que não se deve falar em “o gene de” um traço complexo?",
+   "resposta": "<p>Porque traços como altura e comportamento dependem de muitos genes e do ambiente; modelos de um gene não os descrevem.</p>",
+   "conceito": "dna"
+  }
+ ],
+ "material": [
+  {
+   "titulo": "Aula “Probabilidade: medir a incerteza”",
+   "descricao": "a base para ler o quadro de Punnett como previsão."
+  },
+  {
+   "titulo": "Aula “Ecologia e evolução”",
+   "descricao": "a variação genética é a matéria-prima da seleção natural."
+  }
+ ]
+}
