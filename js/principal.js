@@ -19,4 +19,5 @@ iniciarRoteador().then(()=>{
  document.body.classList.add('aplicacao-pronta');
  document.body.classList.toggle('modo-demonstracao',Boolean(perfil.demonstracao));
  import('./revisoes/agendador.js').then(modulo=>modulo.atualizarPendencias()).catch(()=>{});
+ if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('/sw.js').catch(()=>{});
 });

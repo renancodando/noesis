@@ -1,0 +1,19 @@
+/* Renan | renancodando */
+.faixa-nivel{margin-bottom:18px}
+.faixa-nivel .alinhado{gap:22px}
+.medalha{width:86px;height:86px;flex-shrink:0;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle at 35% 30%,#3a3a2c,#141d28 75%);border:2px solid #e5c17d;box-shadow:0 0 22px #e5c17d44,inset 0 0 14px #0008}
+.medalha strong{font:500 30px/1 var(--fonte-serif);color:#f1dca6}
+.medalha small{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#d9c48f;margin-top:3px}
+.faixa-nivel .barra-progresso{margin:6px 0 10px}
+.indicadores-jornada{margin-bottom:18px}
+.indicadores-jornada .placa em{display:block;font-style:normal;font-size:10px;color:#8aa0a8;margin-top:4px}
+.paineis-jornada{margin-bottom:18px}
+.semanas-jornada{display:flex;gap:5px;align-items:flex-end;height:120px;padding:0 4px;position:relative}
+.semana-jornada{flex:1;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:4px}
+.semana-jornada i{display:block;width:100%;max-width:26px;height:var(--altura,0%);min-height:2px;border-radius:4px 4px 0 0;background:linear-gradient(180deg,#f9dc86,#c88c3e);transition:height .6s var(--curva)}
+.semana-jornada b{position:absolute;left:50%;bottom:calc(16px + var(--y,0%) * .8);translate:-50% 50%;width:8px;height:8px;border-radius:50%;background:#9fd8ff;border:1px solid #fff;z-index:1}
+.semana-jornada small{font-size:8.5px;color:#a9bcc2;white-space:nowrap}
+.historico-jornada li{display:grid;grid-template-columns:auto 1fr auto;gap:10px;padding:6px 0;border-bottom:1px solid #ffffff0c;font-size:13px;color:#d4dcd9;align-items:baseline}
+.historico-jornada time{font-size:11px;color:#a9bcc2;white-space:nowrap}
+.historico-jornada em{font-style:normal;font-size:11px;color:#d9c48f}
+@media(max-width:700px){.semanas-jornada{height:100px}.semana-jornada small{font-size:7.5px}}

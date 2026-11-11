@@ -1,0 +1,34 @@
+/* Renan | renancodando */
+.pagina-revisoes{max-width:980px}
+.chamada-sessao h2{margin:4px 0 6px}
+.painel-sessao{margin-bottom:22px}
+.paineis-revisao{margin-bottom:18px}
+.lista-prioridade{margin:0;padding-left:20px;display:grid;gap:10px}
+.lista-prioridade li::marker{color:#e39a6d}
+.pergunta-prioridade{display:block;font-size:14px;line-height:1.5;color:#e3e8e4}
+.lista-prioridade small{display:block;font-size:11px;color:#a9bcc2;margin-top:2px}
+.lista-agendadas li{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;padding:8px 0;border-bottom:1px solid #ffffff0c;font-size:13.5px;color:#d4dcd9}
+.lista-agendadas time{font:500 12px var(--fonte-serif);color:#d9c48f;white-space:nowrap;padding-top:2px}
+.lista-agendadas small{grid-column:2;font-size:11px;color:#a9bcc2}
+.semanas{display:flex;gap:6px;align-items:flex-end;height:90px;padding:0 4px}
+.semana{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:4px}
+.semana i{display:block;width:100%;max-width:34px;height:var(--altura,0%);min-height:2px;border-radius:4px 4px 0 0;background:linear-gradient(180deg,#f9dc86,#c88c3e);transition:height .6s var(--curva)}
+.semana small{font-size:9px;color:#a9bcc2}
+.algoritmo summary{cursor:pointer;display:flex;align-items:center;gap:8px;font:500 15px var(--fonte-serif);color:#eedcb4;list-style:none}
+.algoritmo summary .icone{width:16px;height:16px;color:#d1ad6c}
+.algoritmo[open] summary{margin-bottom:10px}
+.algoritmo .prosa{font-size:14px}
+.sessao{max-width:760px;margin:0 auto;padding:28px 30px}
+.contagem-sessao{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#a9bcc2;margin:12px 0 22px}
+.pergunta-sessao{font:500 clamp(22px,2.6vw,30px)/1.35 var(--fonte-serif);color:#f1e4c3;margin:0 0 10px}
+.cartao-sessao kbd{font:10px ui-monospace,monospace;border:1px solid #ffffff33;border-radius:4px;padding:1px 5px;margin-left:8px;color:#a9bcc2}
+.resposta-sessao{margin-top:18px;padding-top:18px;border-top:1px solid var(--linha);animation:revelar .35s var(--curva) both}
+.resposta-sessao .prosa{font-size:16px}
+.qualidades{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-top:8px}
+.qualidades .botao{flex-direction:column;align-items:flex-start;gap:3px;padding:12px 14px;text-align:left;min-height:0}
+.qualidades strong{font:500 15px var(--fonte-serif);color:#f0e1bd}
+.qualidades small{font-size:11px;color:#a9bcc2;line-height:1.4}
+.qualidades em{font-style:normal;font-size:10px;color:#d9c48f}
+.qualidades kbd{margin:4px 0 0}
+.qualidades [data-qualidade="1"]{border-color:#d47a7277}.qualidades [data-qualidade="3"]{border-color:#e0a85a77}.qualidades [data-qualidade="4"]{border-color:#86b4d877}.qualidades [data-qualidade="5"]{border-color:#7fc3a477}
+@media(max-width:700px){.sessao{padding:20px 16px}.qualidades{grid-template-columns:1fr 1fr}}

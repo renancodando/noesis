@@ -1,0 +1,22 @@
+/* Renan | renancodando */
+.mapa-exploracao{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:12px;align-items:start}
+.tela-grafo{display:block;width:100%;border-radius:14px;background:radial-gradient(ellipse at 50% 40%,#0f2230,#060e15 75%);border:1px solid var(--linha);box-shadow:inset 0 0 80px #0008;cursor:grab;touch-action:none}
+.tela-grafo:active{cursor:grabbing}
+.tela-grafo:focus-visible{outline:2px solid #f3db9d}
+.painel-no{display:grid;gap:10px}
+.painel-no>div{padding:16px 18px;border:1px solid var(--linha);border-radius:12px;background:linear-gradient(150deg,#15262ee0,#10212af0)}
+.painel-no h2{font:500 20px/1.25 var(--fonte-serif);color:#f0e1bd;margin:4px 0 8px}
+.legenda-grafo{list-style:none;padding:0;margin:0 0 10px;display:grid;gap:5px;font-size:12px;color:#c6d3d1}
+.legenda-grafo i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.seta-legenda{color:#e39a6d;margin-right:6px}
+.linha-legenda{display:inline-block;width:16px;height:1px;background:#86b4d8;vertical-align:middle;margin-right:6px}
+.lista-ligacoes{list-style:none;padding:0;margin:10px 0;display:grid;gap:4px;max-height:220px;overflow:auto}
+.lista-ligacoes li{display:grid;grid-template-columns:auto 1fr;gap:8px;align-items:baseline;font-size:13px}
+.lista-ligacoes small{font-size:10px;color:#a9bcc2;white-space:nowrap}
+.lista-ligacoes .botao-texto{text-align:left;padding:2px 0}
+.lista-nos{padding:12px 16px;border:1px solid var(--linha);border-radius:12px;background:#10212acc}
+.lista-nos summary{cursor:pointer;font:500 13px var(--fonte-serif);color:#d9c48f}
+.lista-nos ul{max-height:260px;overflow:auto;margin-top:8px}
+.lista-nos li{font-size:12.5px}
+.lista-nos small{color:#a9bcc2;font-size:10px}
+@media(max-width:980px){.mapa-exploracao{grid-template-columns:1fr}}

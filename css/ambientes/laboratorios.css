@@ -39,11 +39,6 @@
 .passos-guiados .marca-passo .icone{width:13px;height:13px}
 .desafio p{font-size:13.5px}
 .resultado-desafio .mensagem{margin-bottom:0}
-.leitura-laboratorio{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-top:12px}
-.leitura-laboratorio>div{padding:9px 11px;border:1px solid #ffffff10;border-radius:8px;background:#06111acc}
-.leitura-laboratorio small{display:block;font-size:9px;letter-spacing:1.3px;text-transform:uppercase;color:#a9bcc2;margin-bottom:3px}
-.leitura-laboratorio strong{font:500 19px var(--fonte-serif);color:#f1dca6;font-variant-numeric:tabular-nums}
-.leitura-laboratorio strong small{display:inline;font-size:11px;letter-spacing:0;text-transform:none;margin-left:3px}
 .paleta-salva{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
 .paleta-salva i{width:34px;height:34px;border-radius:6px;border:1px solid #ffffff22}
 .lista-eventos{max-height:260px;overflow:auto;display:grid;gap:6px;margin-top:10px;padding-right:4px;scrollbar-width:thin}
