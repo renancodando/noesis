@@ -16,7 +16,8 @@ export function destacarCodigo(codigo,linguagem='javascript'){
  let texto=escapar(codigo);
  if(linguagem==='html')return texto.replace(/(&lt;\/?)([a-zA-Z][\w-]*)([^&]*?)(\/?&gt;)/g,(_,a,tag,resto,f)=>`${a}<span class="c-tag">${tag}</span>${resto.replace(/([\w-]+)=(&quot;.*?&quot;)/g,'<span class="c-chave">$1</span>=<span class="c-texto">$2</span>')}${f}`).replace(/(&lt;!--.*?--&gt;)/g,'<span class="c-coment">$1</span>');
  if(linguagem==='css')return texto.replace(/([\w-]+)(\s*:)/g,'<span class="c-chave">$1</span>$2').replace(/(\/\*.*?\*\/)/g,'<span class="c-coment">$1</span>').replace(/([.#]?[\w-]+)(\s*\{)/g,'<span class="c-tag">$1</span>$2');
- return texto.replace(/(\/\/.*$)/gm,'<span class="c-coment">$1</span>').replace(/(&#39;[^&]*?&#39;|&quot;[^&]*?&quot;|`[^`]*`)/g,'<span class="c-texto">$1</span>').replace(/\b(const|let|var|function|return|if|else|for|while|of|in|new|true|false|null|undefined|class|import|export|await|async|enquanto|se|senao|retorne|para|repita|escreva|leia)\b/g,'<span class="c-chave">$1</span>').replace(/\b(\d+(?:\.\d+)?)\b/g,'<span class="c-num">$1</span>');
+ const padrao=/(\/\/[^\n]*)|(&#39;(?:[^&]|&(?!#39;))*?&#39;|&quot;(?:[^&]|&(?!quot;))*?&quot;|`[^`]*`)|\b(const|let|var|function|return|if|else|for|while|of|in|new|true|false|null|undefined|class|import|export|await|async|enquanto|se|senao|retorne|para|repita|escreva|leia)\b|\b(\d+(?:\.\d+)?)\b/g;
+ return texto.replace(padrao,(trecho,comentario,cadeia,chave,numero)=>comentario?`<span class="c-coment">${comentario}</span>`:cadeia?`<span class="c-texto">${cadeia}</span>`:chave?`<span class="c-chave">${chave}</span>`:`<span class="c-num">${numero}</span>`);
 }
 
 const renderizadores={
