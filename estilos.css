@@ -12,3 +12,7 @@ html.movimento-pausado *,html.movimento-pausado *:before,html.movimento-pausado 
 
 @media(min-width:1181px) and (max-width:1499px){.marca-simbolo{width:70px;height:66px}.marca{padding-bottom:13px}#navegacao{gap:0}#navegacao button{padding:5px 14px;min-height:34px}}
 @media(max-width:700px){.cenario-fixo{background-position:65% center}}
+
+.medalhao-nivel{box-shadow:inset 0 1px 2px #ffe9ae66,0 3px 11px #0008,0 0 18px #c89b4620}.medalhao-nivel:before{background:radial-gradient(ellipse at 35% 24%,#39404a,#1b2330 55%,#0d1724);box-shadow:inset 0 3px 9px #0009,0 1px 1px #ffe6a04d}.rotulo-dominio{box-shadow:inset 0 1px 0 #eadbb41c,0 3px 8px #0007}.barra-lateral{background:linear-gradient(90deg,#1014116e,#241b127d 48%,#15171066);backdrop-filter:blur(2px)}.insignias button{box-shadow:inset 0 1px 2px #fff1c566}.painel-jornada:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,transparent 38%,#e3cda205 45%,transparent 54%);clip-path:polygon(5% 6%,25% 4%,50% 0,75% 4%,95% 6%,95% 84%,76% 87%,50% 98%,24% 87%,5% 84%)}
+@media(max-width:980px){.painel-jornada{background:repeating-linear-gradient(0deg,#ffffff02 0 1px,transparent 1px 3px),linear-gradient(115deg,#172331f5,#1e2938f5 20%,#111d2bf7 75%,#172331f5)}.painel-jornada:after{display:none}}
+@media(max-width:700px){.barra-lateral{background:linear-gradient(120deg,#17211afc,#1b201afc)}}

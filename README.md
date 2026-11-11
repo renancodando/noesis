@@ -18,6 +18,7 @@ Abra `http://localhost:3000`. Não há instalação de dependências, compilaç�
 - `estilos.css`: composição, ornamentos, animações e responsividade.
 - `interface.js`: conteúdos contextuais, mapa, expedições, preferências e progresso local.
 - `universo.js`: renderização Three.js, shaders ambientais e geometrias das disciplinas.
+- `materiais.js`: reflexos arquitetônicos, texturas de materiais e ruído natural compartilhado.
 - `dados.js`: nomes, perguntas e conexões dos conhecimentos.
 - `gerar.py`: fonte dos modelos HTML. Execute `python3 gerar.py` após alterá-los.
 - `ativos/simbolo.svg`: símbolo independente da marca.
@@ -33,7 +34,7 @@ As informações são guardadas apenas no navegador com `localStorage`, quando d
 
 ## Movimento e acessibilidade
 
-Um contexto WebGL reúne o cenário e o universo. A cachoeira usa deslocamento temporal por shader, névoa e reflexos; a vegetação tem fases de movimento diferentes e as luzes variam suavemente. A plataforma tem anéis independentes. As disciplinas têm geometrias e animações próprias.
+Um contexto WebGL reúne o cenário e o universo. A cachoeira combina correntes descendentes em várias escalas, filetes, espuma, névoa e reflexos; a vegetação tem fases de movimento diferentes e as luzes variam suavemente. A plataforma tem anéis independentes. As disciplinas têm geometrias e animações próprias. A iluminação combina reflexos frios da abertura exterior e luz quente das lanternas. Há vidro com reflexos, quartzo com refração e dispersão, metais com marcas superficiais, colunas caneladas, camadas de papel e terreno com neve e vegetação.
 
 Há qualidade econômica, equilibrada e alta, pausa explícita, respeito a `prefers-reduced-motion`, contraste reforçado, texto ampliado e pausa em abas ocultas. Sem WebGL, a composição de reserva mantém o cenário, os oito mundos, os rótulos e todas as interações em HTML/SVG. Os elementos focais são renderizados por um único mecanismo de cada vez.
 
