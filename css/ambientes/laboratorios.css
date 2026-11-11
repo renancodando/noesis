@@ -1,0 +1,97 @@
+/* Renan | renancodando */
+.bancada-laboratorios{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:18px;margin:6px 0 26px}
+.instrumento-cartao{display:grid;grid-template-columns:118px 1fr;gap:18px;padding:16px;border:1px solid var(--linha);border-radius:14px;background:linear-gradient(150deg,#15262ee8,#0f1f28f4);color:inherit;box-shadow:var(--sombra-suave);transition:transform .3s var(--curva),border-color .3s,box-shadow .3s}
+.instrumento-cartao:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--cor) 60%,#e1bd7a);box-shadow:0 14px 34px #0008,0 0 24px color-mix(in srgb,var(--cor) 22%,transparent)}
+.visor{display:flex;flex-direction:column;justify-content:space-between;align-items:center;padding:14px 10px;border-radius:10px;background:radial-gradient(ellipse at 50% 20%,color-mix(in srgb,var(--cor) 28%,#0b1a22),#06111a 80%);border:1px solid color-mix(in srgb,var(--cor) 45%,transparent);box-shadow:inset 0 0 30px #000a,inset 0 1px 0 #ffffff14}
+.sigla{font:500 17px/1 var(--fonte-serif);letter-spacing:3px;color:var(--cor);text-shadow:0 0 14px color-mix(in srgb,var(--cor) 70%,transparent);writing-mode:vertical-rl;transform:rotate(180deg);margin:4px 0 10px}
+.luzes{display:flex;gap:6px}
+.luzes i{width:8px;height:8px;border-radius:50%;background:#1d2d35;border:1px solid #ffffff22}
+.luzes i.acesa{background:#9fe0c0;box-shadow:0 0 8px #7fc3a4}
+.texto-instrumento{display:flex;flex-direction:column;gap:8px;min-width:0}
+.texto-instrumento strong{font:500 19px/1.2 var(--fonte-serif);color:#f0e1bd}
+.texto-instrumento small{font-size:12px;line-height:1.55;color:#b4c3c5;flex:1}
+.texto-instrumento .etiqueta .icone{color:var(--cor,#d1ad6c)}
+.cabecalho-laboratorio .alinhado{gap:18px;margin-bottom:10px}
+.placa-sigla{font:500 22px/1 var(--fonte-serif);letter-spacing:4px;color:var(--cor);padding:14px 16px;border:1px solid color-mix(in srgb,var(--cor) 55%,transparent);border-radius:10px;background:radial-gradient(ellipse at 50% 0,color-mix(in srgb,var(--cor) 25%,#0b1a22),#06111a);text-shadow:0 0 16px color-mix(in srgb,var(--cor) 70%,transparent);box-shadow:inset 0 0 20px #000a}
+.cabecalho-laboratorio h1{margin:0}
+.abas-experimentos{margin-top:4px}
+.pagina-laboratorio .bancada{grid-template-columns:minmax(0,1.6fr) minmax(280px,.8fr)}
+.coluna-instrumento{display:grid;gap:12px;min-width:0}
+.area-experimento{min-height:360px}
+.area-experimento .controles{display:grid;gap:2px;margin-top:14px}
+.area-experimento .controles.lado-a-lado{grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:2px 22px}
+.area-experimento .explicacao-interativo{font-size:13px;color:#c6d3d1;margin:12px 0 0;line-height:1.7;border-top:1px solid #ffffff10;padding-top:10px}
+.area-experimento .explicacao-interativo strong{color:#f1dca6;font-weight:500}
+.area-experimento .texto-alternativo{font-size:12px;color:#a9bcc2;margin:8px 0 0}
+.area-experimento .botoes-opcoes{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}
+.nota-modelo-laboratorio ul{font-size:12.5px}
+.painel-controles h3{display:flex;align-items:center;gap:8px;margin-top:0}
+.painel-controles h3 .icone{width:18px;height:18px;color:var(--cor)}
+.painel-controles h4{font:500 16px var(--fonte-serif);color:#eedcb4;margin:0 0 8px}
+.instrucoes ol{margin:0;padding-left:18px;font-size:13px;line-height:1.65;color:#d9d0b7}
+.instrucoes ol li{margin-bottom:5px}
+.passos-guiados{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.passos-guiados li{display:flex;gap:10px;align-items:flex-start;padding:9px 11px;border-radius:8px;border:1px solid #ffffff10;background:#0c1b23aa;font-size:13px;line-height:1.55;color:#c6d3d1;transition:border-color .3s,background .3s}
+.passos-guiados li.atual{border-color:#e5c17d88;background:#2b251699}
+.passos-guiados li.feito{border-color:#7fc3a466;color:#cff0e0}
+.marca-passo{width:22px;height:22px;flex-shrink:0;border-radius:50%;display:grid;place-items:center;font-size:11px;border:1px solid #c9a96766;color:#e9cf93}
+.passos-guiados li.feito .marca-passo{background:#1f5a46;border-color:#7fc3a4;color:#d8f5e6}
+.passos-guiados .marca-passo .icone{width:13px;height:13px}
+.desafio p{font-size:13.5px}
+.resultado-desafio .mensagem{margin-bottom:0}
+.leitura-laboratorio{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-top:12px}
+.leitura-laboratorio>div{padding:9px 11px;border:1px solid #ffffff10;border-radius:8px;background:#06111acc}
+.leitura-laboratorio small{display:block;font-size:9px;letter-spacing:1.3px;text-transform:uppercase;color:#a9bcc2;margin-bottom:3px}
+.leitura-laboratorio strong{font:500 19px var(--fonte-serif);color:#f1dca6;font-variant-numeric:tabular-nums}
+.leitura-laboratorio strong small{display:inline;font-size:11px;letter-spacing:0;text-transform:none;margin-left:3px}
+.paleta-salva{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.paleta-salva i{width:34px;height:34px;border-radius:6px;border:1px solid #ffffff22}
+.lista-eventos{max-height:260px;overflow:auto;display:grid;gap:6px;margin-top:10px;padding-right:4px;scrollbar-width:thin}
+.evento-crono{padding:9px 12px;border:1px solid #ffffff10;border-radius:8px;background:#0c1b23aa;font-size:13px;line-height:1.5;color:#c6d3d1;text-align:left;width:100%}
+.evento-crono[aria-pressed=true]{border-color:#e5c17d}
+.evento-crono b{color:#f1dca6;font-weight:500;margin-right:8px;font-variant-numeric:tabular-nums}
+.evento-crono small{display:block;color:#a9bcc2;font-size:11px;margin-top:2px}
+.painel-evento{margin-top:12px;padding:12px 14px;border-radius:9px;border:1px solid var(--linha);background:#13232bb8;font-size:13.5px;line-height:1.65;color:#d4dcd9}
+.painel-evento h4{font:500 17px var(--fonte-serif);color:#f0e1bd;margin:0 0 6px}
+.painel-evento .etiqueta{margin-right:4px}
+.painel-orgao h4{font:500 18px var(--fonte-serif);color:#f0e1bd;margin:0 0 6px}
+.painel-orgao p{font-size:13.5px;line-height:1.65;color:#d4dcd9;margin:0 0 8px}
+.corpo-svg path,.corpo-svg ellipse,.corpo-svg circle{transition:filter .2s,opacity .2s}
+.corpo-svg .orgao{cursor:pointer}
+.corpo-svg .orgao:hover,.corpo-svg .orgao.ativo{filter:drop-shadow(0 0 8px #f1dca6)}
+.corpo-svg .orgao:focus-visible{outline:2px solid #f3db9d}
+.corpo-svg .apagado{opacity:.22}
+.tabela-verdade{width:100%;border-collapse:collapse;font:13px ui-monospace,Consolas,monospace;margin-top:10px}
+.tabela-verdade th,.tabela-verdade td{padding:6px 10px;border:1px solid #ffffff14;text-align:center;color:#d8e2df}
+.tabela-verdade th{color:#e2cf9f;background:#0c1b23}
+.tabela-verdade td.um{color:#9fe0c0}
+.tabela-verdade td.zero{color:#8aa0a8}
+.tabela-verdade tr.atual td{background:#2b251699}
+.interruptor-bit{min-width:54px;font:500 16px ui-monospace,Consolas,monospace}
+.blocos-algoritmo{display:grid;gap:6px;margin-top:10px}
+.bloco-alg{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;border:1px solid #ffffff14;background:#0c1b23;font:13px ui-monospace,Consolas,monospace;color:#d8e2df;flex-wrap:wrap}
+.bloco-alg.executando{border-color:#e5c17d;background:#2b2516}
+.bloco-alg.aninhado{margin-left:26px;border-left:2px solid #86b4d866}
+.bloco-alg input,.bloco-alg select{display:inline-block;width:auto;padding:3px 6px;font-size:13px!important;margin:0}
+.bloco-alg input[type=number]{width:64px}
+.bloco-alg .remover{margin-left:auto;background:none;color:#a9bcc2;padding:2px 6px}
+.bloco-alg .remover:hover{color:#f6cdc6}
+.paleta-blocos{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.saida-programa{margin-top:10px;padding:10px 12px;min-height:60px;border-radius:8px;background:#030a0f;border:1px solid #ffffff10;font:13px ui-monospace,Consolas,monospace;color:#9fe0c0;white-space:pre-wrap}
+.variaveis-programa{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.variaveis-programa span{padding:3px 9px;border-radius:14px;background:#1a2a32;border:1px solid #ffffff14;font:12px ui-monospace,Consolas,monospace;color:#f1dca6}
+.editor-area{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.editor-area textarea{min-height:220px}
+.console-saida{min-height:220px;padding:10px 12px;border-radius:8px;background:#030a0f;border:1px solid #ffffff10;font:12.5px/1.6 ui-monospace,Consolas,monospace;color:#d8e2df;white-space:pre-wrap;overflow:auto}
+.console-saida .erro{color:#f6a9a0}
+.console-saida .aviso{color:#f5dfb9}
+.ferramentas-atelie{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;align-items:center}
+.ferramentas-atelie label{margin:0;display:inline-flex;align-items:center;gap:6px;font-size:12px}
+.ferramentas-atelie input[type=color]{width:34px;height:30px}
+.amostras-cor{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:8px;margin-top:10px}
+.amostra{height:70px;border-radius:8px;border:1px solid #ffffff22;display:flex;align-items:flex-end;padding:6px;font:11px ui-monospace,Consolas,monospace;color:#fff;text-shadow:0 1px 2px #000}
+.previa-tipografia{padding:22px 26px;border-radius:8px;background:#f4ecd8;color:#2a2419;margin-top:10px;overflow:hidden}
+.previa-tipografia h4{margin:0 0 .5em;font-weight:500}
+.previa-tipografia p{margin:0 0 1em;color:#2a2419}
+@media(max-width:980px){.pagina-laboratorio .bancada{grid-template-columns:1fr}.editor-area{grid-template-columns:1fr}}
+@media(max-width:700px){.instrumento-cartao{grid-template-columns:84px 1fr;gap:12px;padding:12px}.sigla{font-size:14px}.placa-sigla{font-size:17px;padding:10px 12px}.area-experimento{min-height:0}}

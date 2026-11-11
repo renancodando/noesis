@@ -90,12 +90,14 @@ export async function concluirAula(aula){
  return {registro,nova:true};
 }
 
-export async function registrarLaboratorio(laboratorioId,{atividadeGuiada,desafio,estado,nome}={}){
+export async function registrarLaboratorio(laboratorioId,{atividadeGuiada,desafio,estado,nome,guiadas,desafios}={}){
  const registro=(await obter('laboratorios',laboratorioId))||{id:laboratorioId,atividadeGuiada:false,desafio:false,estado:null,atualizadoEm:null,visitas:0};
  let xp=0,motivo='';
  if(atividadeGuiada&&!registro.atividadeGuiada){registro.atividadeGuiada=true;xp=RECOMPENSAS.atividadeGuiada;motivo=`Atividade guiada concluída em ${nome||laboratorioId.toUpperCase()}`;}
  if(desafio&&!registro.desafio){registro.desafio=true;xp+=RECOMPENSAS.desafioLaboratorio;motivo=`Desafio concluído em ${nome||laboratorioId.toUpperCase()}`;}
  if(estado!==undefined)registro.estado=estado;
+ if(guiadas)registro.guiadas=guiadas;
+ if(desafios)registro.desafios=desafios;
  registro.atualizadoEm=new Date().toISOString();
  await salvar('laboratorios',registro);
  if(xp){adicionarXp(xp,motivo);await registrarAtividade(desafio?'desafio':'atividade-guiada',motivo,laboratorioId,xp);}

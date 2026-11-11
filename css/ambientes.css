@@ -92,7 +92,7 @@ body[data-ambiente=exploracao] .sombra-cenario{background:linear-gradient(180deg
 .controle{display:grid;grid-template-columns:minmax(90px,auto) 1fr auto;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid #ffffff0c}
 .controle:last-child{border-bottom:0}
 .controle label{margin:0;font-size:12px;color:#d6dfdc}
-.controle input[type=range]{width:100%;min-width:90px}
+.controle input[type=range]{width:100%;min-width:60px}
 .controle output,.controle .valor{font:14px var(--fonte-serif);color:#f1dca6;min-width:62px;text-align:right;font-variant-numeric:tabular-nums}
 .leitura{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:12px}
 .leitura>div{min-width:110px;padding:10px 12px;border:1px solid var(--linha);border-radius:8px;background:#0c1a2199}

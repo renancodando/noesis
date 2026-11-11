@@ -79,7 +79,7 @@
 .interativo canvas,.interativo svg.tela{display:block;width:100%;height:auto;border-radius:8px;background:#071219;touch-action:none;max-width:100%}
 .carregando-interativo{text-align:center;color:#a9bcc2;font-size:12px;margin:0;animation:pulso-suave 1.6s ease-in-out infinite}
 .interativo .controles{display:grid;gap:4px;margin-top:14px}
-.interativo .controles.lado-a-lado{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:4px 18px}
+.interativo .controles.lado-a-lado{grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:4px 22px}
 .interativo .acoes-painel{margin-top:12px}
 .interativo .explicacao-interativo{font-size:13px;color:#c6d3d1;margin:12px 0 0;line-height:1.7;border-top:1px solid #ffffff10;padding-top:10px}
 .interativo .explicacao-interativo strong{color:#f1dca6;font-weight:500}

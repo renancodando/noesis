@@ -17,7 +17,7 @@ export function criarTela(area,{largura=640,altura=360,descricao='Visualização
   return {largura:disponivel,altura:alturaReal};
  }
  let medidas=ajustar();
- const observador=new ResizeObserver(()=>{const novas=ajustar();if(novas.largura!==medidas.largura){medidas=novas;tela.dispatchEvent(new Event('redimensionar'));}});
+ const observador=new ResizeObserver(()=>{const disponivel=Math.max(240,Math.min(largura,area.clientWidth-2));if(disponivel===medidas.largura)return;medidas=ajustar();tela.dispatchEvent(new Event('redimensionar'));});
  observador.observe(area);
  return {tela,contexto,get largura(){return medidas.largura},get altura(){return medidas.altura},destruir(){observador.disconnect();}};
 }
