@@ -49,6 +49,6 @@ export function etapasDaJornada(disciplina,catalogo,obterEstado){
 
 export function resumoDaJornada(etapas){
  const concluidas=etapas.filter(etapa=>etapa.concluida).length;
- const emAndamento=etapas.find(etapa=>etapa.estado==='em-aprendizagem')||etapas.find(etapa=>!etapa.concluida&&!etapa.bloqueada)||null;
+ const emAndamento=etapas.find(etapa=>etapa.estado==='em-aprendizagem')||etapas.find(etapa=>!etapa.concluida&&!etapa.bloqueada)||etapas.find(etapa=>!etapa.concluida)||null;
  return {total:etapas.length,concluidas,proporcao:etapas.length?concluidas/etapas.length:0,proxima:emAndamento,revisoes:etapas.filter(etapa=>etapa.estado==='precisa-revisao').length,dominadas:etapas.filter(etapa=>etapa.estado==='dominio-demonstrado').length};
 }
