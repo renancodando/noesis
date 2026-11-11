@@ -1,0 +1,62 @@
+/* Renan | renancodando */
+.oficina{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:16px;margin:6px 0 26px}
+.projeto-cartao{display:flex;flex-direction:column;gap:10px;padding:20px 22px;border:1px solid var(--linha);border-radius:12px;background:linear-gradient(150deg,#1f1a12e8,#15130ef2 60%,#1a160fef),repeating-linear-gradient(45deg,#ffffff03 0 2px,transparent 2px 8px);color:inherit;box-shadow:var(--sombra-suave);transition:transform .3s var(--curva),border-color .3s,box-shadow .3s;position:relative}
+.projeto-cartao:before{content:'';position:absolute;inset:8px;border:1px dashed #c9a96733;border-radius:8px;pointer-events:none}
+.projeto-cartao:hover{transform:translateY(-4px);border-color:#e1bd7a99;box-shadow:0 14px 34px #0008}
+.cabeca-projeto{display:flex;justify-content:space-between;align-items:center}
+.numero-projeto{font:500 12px var(--fonte-serif);letter-spacing:2px;color:#d9c48f}
+.dificuldade{font-size:11px;color:#e0a85a;letter-spacing:2px}
+.projeto-cartao strong{font:500 20px/1.2 var(--fonte-serif);color:#f0e1bd}
+.projeto-cartao small{font-size:12.5px;line-height:1.55;color:#c4b9a3;flex:1}
+.projeto-cartao .etiqueta .icone{color:var(--cor,#d1ad6c)}
+.oficina-projeto{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(280px,.8fr);gap:18px;align-items:start}
+.area-trabalho{min-width:0}
+.mesa{border:1px solid #c9a96755;border-radius:14px;padding:18px;background:linear-gradient(160deg,#1c1812f2,#14120df6),repeating-linear-gradient(90deg,#ffffff03 0 1px,transparent 1px 24px),repeating-linear-gradient(0deg,#ffffff03 0 1px,transparent 1px 24px);box-shadow:inset 0 0 60px #0008,0 8px 24px #0005;min-height:380px}
+.mesa canvas{display:block;width:100%;height:auto;border-radius:8px;background:#0e1a20;touch-action:none}
+.mesa .controles{display:grid;gap:2px;margin-top:12px}
+.mesa .controles.lado-a-lado{grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:2px 22px}
+.mesa .botoes-opcoes{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}
+.mesa .explicacao-interativo{font-size:13px;color:#d6cdb4;margin:12px 0 0;line-height:1.7;border-top:1px solid #ffffff10;padding-top:10px}
+.mesa .explicacao-interativo strong{color:#f1dca6;font-weight:500}
+.mesa .texto-alternativo{font-size:12px;color:#a9a08b;margin:8px 0 0}
+.paineis-projeto{display:grid;gap:12px;position:sticky;top:76px}
+.paineis-projeto h3{display:flex;align-items:center;gap:8px;margin-top:0;font-size:16px}
+.paineis-projeto h3 .icone,.paineis-projeto summary .icone{width:17px;height:17px;color:#d1ad6c}
+.paineis-projeto summary{cursor:pointer;display:flex;align-items:center;gap:8px;font:500 15px var(--fonte-serif);color:#eedcb4;list-style:none}
+.paineis-projeto details[open] summary{margin-bottom:10px}
+.instrucoes-projeto{margin:0;padding-left:18px;font-size:13px;line-height:1.65;color:#d9d0b7}
+.instrucoes-projeto li{margin-bottom:6px}
+.paineis-projeto .lista-criterios li small{display:block;color:#a9a08b;font-size:11.5px}
+.paineis-projeto .lista-criterios li em{font-style:normal;font-size:11px;color:#a9a08b}
+.paineis-projeto .criterio{margin:0;font-size:14px}
+.testes{display:grid;gap:6px;margin-top:12px}
+.teste{display:grid;grid-template-columns:1fr auto;gap:10px;padding:8px 12px;border-radius:8px;border:1px solid #ffffff10;background:#0c1b23aa;font:13px ui-monospace,Consolas,monospace;color:#d8e2df}
+.teste.ok{border-color:#7fc3a466}.teste.falha{border-color:#d47a7266}
+.teste span:last-child{color:#a9bcc2}
+.teste.ok span:last-child{color:#9fe0c0}.teste.falha span:last-child{color:#f6a9a0}
+.calculadora-visual{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px}
+.visor-calculadora{grid-column:1/-1;padding:12px 14px;border-radius:8px;background:#030a0f;border:1px solid #ffffff10;font:22px ui-monospace,Consolas,monospace;color:#f1dca6;text-align:right;min-height:52px;overflow:hidden}
+.teclado{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;grid-column:1/-1}
+.teclado button{min-height:40px;font:16px ui-monospace,Consolas,monospace;border-radius:8px;background:#1a2a32;border:1px solid #ffffff14;color:#e3ebe8}
+.teclado button:hover{border-color:#e5c17d}
+.teclado button.operador{color:#f1dca6;background:#2b2516}
+.ramos-circuito{display:grid;gap:10px;margin-top:12px}
+.ramo{padding:10px 12px;border:1px solid #ffffff14;border-radius:9px;background:#0c1b23aa}
+.ramo h4{font:500 13px var(--fonte-serif);color:#d9c48f;margin:0 0 6px;display:flex;justify-content:space-between;align-items:center}
+.componentes-ramo{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.componente{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border-radius:7px;border:1px solid #ffffff14;background:#132a36;font-size:12px;color:#d8e2df}
+.componente.lampada{border-color:#e5c17d55}
+.componente.acesa{background:#5a4317;border-color:#f1dca6;box-shadow:0 0 10px #e5c17d55}
+.componente button{background:none;color:#a9bcc2;padding:0 2px}
+.documentos-investigacao{display:grid;gap:10px;margin-top:10px}
+.doc-item{border:1px solid #ffffff14;border-radius:9px;background:#0c1b23aa;padding:12px 14px}
+.doc-item h4{font:500 15px var(--fonte-serif);color:#eedcb4;margin:0 0 6px}
+.doc-item p{font-size:13.5px;line-height:1.65;color:#d4dcd9;margin:0 0 8px}
+.doc-item .natureza{font-size:11px;color:#a9bcc2}
+.doc-item select,.doc-item textarea{font-size:13px!important}
+.editor-tres{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.editor-tres label{margin:0;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#d9c48f}
+.editor-tres textarea{min-height:200px;font-size:12.5px!important;margin-top:4px}
+.previa-pagina{margin-top:10px;border:1px solid #ffffff14;border-radius:8px;background:#fff;height:320px;width:100%}
+@media(max-width:980px){.oficina-projeto{grid-template-columns:1fr}.paineis-projeto{position:static}.editor-tres{grid-template-columns:1fr}.calculadora-visual{grid-template-columns:1fr}}
+@media(max-width:700px){.mesa{padding:12px}}
