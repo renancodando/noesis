@@ -12,7 +12,7 @@ async function carregarJson(caminho){
 }
 
 export function carregarCatalogo(){return carregarJson('/conteudos/catalogo.json');}
-export function carregarIndiceBusca(){return carregarJson('/conteudos/busca.json');}
+export function carregarIndiceBusca(){return carregarJson('/conteudos/busca.json').then(indice=>Array.isArray(indice)?indice:indice?.entradas||[]);}
 
 export async function carregarAula(id){
  const [disciplina,chave]=String(id).split('/');

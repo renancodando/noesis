@@ -59,3 +59,5 @@
 .resultado-revisao{margin-top:16px}
 @media(max-width:980px){.corpo-trilha.duas-colunas.invertida{display:flex;flex-direction:column}.detalhe-trilha{order:-1}}
 @media(max-width:700px){.no-trilha .rotulo-no{max-width:130px;padding:4px 8px}.no-trilha .rotulo-no strong{font-size:12px}.no-trilha .marca-no{width:38px;height:38px;font-size:14px}.no-trilha[style*="--x:74%"]{--x:70%}.no-trilha[style*="--x:26%"]{--x:30%}}
+
+@media(max-width:640px){.trilha{height:auto;min-height:0;display:flex;flex-direction:column;gap:10px}.desenho-trilha{display:none}.no-trilha{position:static;translate:none;order:var(--ordem,0);width:100%;padding:8px 10px;border:1px solid var(--linha);border-radius:12px;background:#10212acc}.no-trilha[style*="--x:74%"]{flex-direction:row;text-align:left}.no-trilha[style*="--x:74%"] .rotulo-no{align-items:flex-start}.no-trilha .rotulo-no{max-width:none;flex:1;background:none;border:0;padding:0 4px}.no-trilha.no-ramo{margin-left:34px;width:calc(100% - 34px)}}

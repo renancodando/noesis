@@ -2,7 +2,7 @@
 
 Um Universo de Aprendizagem Interativa.
 
-Primeira tela de uma plataforma educacional, inspirada na biblioteca monumental da referência. A arquitetura é uma imagem separada. O cristal, as oito disciplinas, as órbitas e os anéis são objetos 3D reais; textos, painéis e controles são HTML. O mapa de conhecimento é SVG interativo.
+Plataforma educacional completa que funciona inteiramente no navegador: oito disciplinas com aulas interativas, jornadas com pré-requisitos, laboratórios com simulações reais, projetos práticos, repetição espaçada, mapa do conhecimento, acervo pessoal, comunidade local e pesquisa global. Não há cadastro, servidor de aplicação, banco remoto, API paga ou inteligência artificial em tempo de execução. Todo o progresso fica no próprio navegador e pode ser exportado, importado ou apagado.
 
 ## Abrir o projeto
 
@@ -10,34 +10,65 @@ Primeira tela de uma plataforma educacional, inspirada na biblioteca monumental 
 python3 -m http.server 3000
 ```
 
-Abra `http://localhost:3000`. Não há instalação de dependências, compilação, cadastro, servidor de aplicação ou banco. A biblioteca Three.js e sua licença estão incluídas em `bibliotecas/`. A pasta pode ser publicada diretamente em hospedagem estática.
+Abra `http://localhost:3000`. Não há instalação de dependências nem etapa de compilação. A biblioteca Three.js e sua licença estão em `bibliotecas/`. A pasta inteira pode ser publicada em hospedagem estática (Vercel, Netlify, GitHub Pages ou qualquer servidor de arquivos): cada rota tem sua própria página `index.html` pré-renderizada e `404.html` cobre endereços inexistentes.
+
+Depois de alterar conteúdos em `conteudos/` ou os modelos em `gerar.py`, execute:
+
+```sh
+python3 gerar.py
+```
+
+O script regenera as páginas estáticas de todas as rotas, o catálogo (`conteudos/catalogo.json`), o índice de busca (`conteudos/busca.json`) e a folha de ícones (`ativos/icones.svg`).
+
+## Ambientes
+
+| Rota | Ambiente | O que faz |
+| --- | --- | --- |
+| `/` | Santuário | Primeira tela cinematográfica com a cena Three.js, as oito disciplinas em órbita, missão do dia, conquistas, notificações e preferências. Preservada integralmente. |
+| `/jornadas` | Jornadas | Trilhas por disciplina com pré-requisitos, ramificações para laboratórios e projetos e estados de domínio por aula. |
+| `/saberes` | Saberes | Catálogo de disciplinas e aulas. Cada aula segue Compreender → Explorar → Experimentar → Resolver → Aplicar → Revisar. |
+| `/laboratorios` | Laboratórios | PRISMA (química), AXIOMA (matemática), NÚCLEO (computação), INTERIOR (corpo humano), CRONO (história) e ATELIÊ (artes), cada um com experimentos, atividade guiada e desafio. |
+| `/construir` | Construir | Seis projetos: calculadora, ponte, circuito, composição visual, investigação histórica e página web, com critérios verificáveis. |
+| `/revisoes` | Revisões | Repetição espaçada determinística com cartões gerados ao concluir aulas. |
+| `/exploracao` | Exploração | Mapa do conhecimento: grafo navegável de conceitos, aulas e laboratórios. |
+| `/minha-jornada` | Minha Jornada | Painel de progresso real: aulas, exercícios, laboratórios, projetos, revisões e sequência de dias. |
+| `/acervo` | Acervo | Anotações, itens salvos e coleções pessoais. |
+| `/comunidade` | Comunidade | Reflexões, desafios e registros guardados apenas localmente; não há outros usuários nem publicação. |
+| `/pesquisa` | Pesquisa | Busca global com normalização de acentos, pontuação por relevância e navegação por teclado. |
+| `/configuracoes` | Configurações | Preferências de leitura, movimento e qualidade; exportação, importação e exclusão dos dados. |
+
+## Conteúdo
+
+Oito disciplinas (Ciências Exatas, Ciências da Vida, Humanidades, Tecnologia, Geografia, Sociedade, Artes e Linguagens) com 41 aulas em `conteudos/<disciplina>/<aula>.json`. Cada aula declara objetivos, pré-requisitos, conceitos, blocos de leitura e componentes interativos, seis exercícios de tipos variados com feedback e dicas, uma prática verificável, cartões de revisão e materiais relacionados. O índice das disciplinas e das jornadas está em `conteudos/indice.json`; laboratórios e projetos, em `conteudos/laboratorios.json` e `conteudos/projetos.json`.
+
+Os textos foram escritos para esta plataforma. Dados históricos e científicos citados são de conhecimento público; exemplos marcados como hipotéticos ou ilustrativos não devem ser lidos como fontes.
+
+## Progresso e dados
+
+O perfil (nome, XP, preferências, missão, agenda) fica em `localStorage`; aulas, tentativas, revisões, anotações, acervo, projetos, laboratórios e descobertas ficam em IndexedDB, com reserva em memória quando o armazenamento não está disponível. Nenhum dado sai do navegador. O perfil de demonstração, quando ativado em Configurações, é marcado explicitamente como tal.
+
+XP, níveis e conquistas seguem regras fixas e verificáveis (`js/progresso/perfil.js`). Uma aula é concluída quando todos os exercícios foram tentados, pelo menos 70% foram acertados e a prática foi registrada; a conclusão gera cartões de revisão agendados por uma adaptação do algoritmo SM-2 (`js/revisoes/agendador.js`).
 
 ## Organização
 
-- `index.html`: primeira tela, rótulos, painel de jornada e controles acessíveis.
-- `estilos.css`: composição, ornamentos, animações e responsividade.
-- `interface.js`: conteúdos contextuais, mapa, expedições, preferências e progresso local.
-- `universo.js`: renderização Three.js, shaders ambientais e geometrias das disciplinas.
-- `materiais.js`: reflexos arquitetônicos, texturas de materiais e ruído natural compartilhado.
-- `dados.js`: nomes, perguntas e conexões dos conhecimentos.
-- `gerar.py`: fonte dos modelos HTML. Execute `python3 gerar.py` após alterá-los.
-- `ativos/simbolo.svg`: símbolo independente da marca.
-- `ARQUITETURA.md`: decisões da cena e limites de execução.
+- `index.html`, `404.html` e as pastas de rotas: páginas estáticas geradas por `gerar.py`, todas com a marcação do Santuário e o conteúdo pré-renderizado do ambiente.
+- `css/santuario.css`: cena, ornamentos e responsividade da primeira tela. `css/ambientes.css` e `css/ambientes/*.css`: estilos compartilhados e de cada ambiente.
+- `js/principal.js`: ponto de entrada. `js/navegacao/rotas.js`: roteador com carregamento dinâmico de ambientes e estilos.
+- `js/santuario/`: cena Three.js (`universo.js`, `materiais.js`), interface da primeira tela (`interface.js`) e dados das disciplinas (`dados.js`).
+- `js/ambientes/`: um módulo por ambiente, com contrato `montar({raiz, parametros, consulta, definirTitulo, navegar})`.
+- `js/aulas/`: renderizador dos blocos de aula e componentes interativos (`interativos/`), com registro em `interativos/indice.js`.
+- `js/exercicios/motor.js`: doze tipos de exercício com verificação, dicas e registro de tentativas.
+- `js/laboratorios/` e `js/projetos/`: simulações e projetos com estado, atividade guiada, desafio e critérios.
+- `js/progresso/`, `js/revisoes/`, `js/jornadas/`, `js/exploracao/`, `js/armazenamento/`, `js/conteudos/`, `js/utilitarios/`: regras de progresso, repetição espaçada, estados de domínio, grafo, persistência, carregamento de conteúdo e utilitários.
+- `sw.js` e `manifesto.webmanifest`: cache de leitura para uso sem conexão e instalação como aplicativo (registrados apenas em HTTPS).
+- `ARQUITETURA.md`: decisões técnicas e limites.
 
-## O que funciona
+## Acessibilidade e desempenho
 
-Todos os menus abrem conteúdos dentro da própria tela. Há busca, agenda local, nome de explorador editável, acervo de expedições, reflexões pessoais, conquistas e preferências de leitura. As oito disciplinas têm conexões navegáveis; o cristal apresenta o conceito da plataforma.
+Navegação por teclado em todos os ambientes, foco visível, regiões anunciadas, textos alternativos para visualizações em canvas, `prefers-reduced-motion`, contraste reforçado e texto ampliado. Os módulos de cada ambiente, os componentes interativos, os laboratórios e os projetos são carregados sob demanda; a cena Three.js só é iniciada no Santuário e pausa quando a aba fica oculta.
 
-INTERIOR ajusta o pulso cardíaco. PRISMA explora pH. NÚCLEO permite fechar um circuito e cumprir a missão. CRONO percorre marcos históricos. As conclusões e descobertas atualizam XP e conquistas sem conceder recompensas repetidas pela mesma ação.
+## Créditos de terceiros
 
-As informações são guardadas apenas no navegador com `localStorage`, quando disponível. Não há publicação de reflexões, comunicação com outras pessoas, autenticação ou chamadas a serviços externos. As atividades são experiências introdutórias.
+Three.js é distribuída sob a licença MIT (`bibliotecas/LICENCA-THREE.txt`). A textura da Terra foi obtida do exemplo público `earth-blue-marble.jpg` de Three Globe (https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg). Os arquivos visuais estão otimizados em WebP.
 
-## Movimento e acessibilidade
-
-Um contexto WebGL reúne o cenário e o universo. A cachoeira combina correntes descendentes em várias escalas, filetes, espuma, névoa e reflexos; a vegetação tem fases de movimento diferentes e as luzes variam suavemente. A plataforma tem anéis independentes. As disciplinas têm geometrias e animações próprias. A iluminação combina reflexos frios da abertura exterior e luz quente das lanternas. Há vidro com reflexos, quartzo com refração e dispersão, metais com marcas superficiais, colunas caneladas, camadas de papel e terreno com neve e vegetação.
-
-Há qualidade econômica, equilibrada e alta, pausa explícita, respeito a `prefers-reduced-motion`, contraste reforçado, texto ampliado e pausa em abas ocultas. Sem WebGL, a composição de reserva mantém o cenário, os oito mundos, os rótulos e todas as interações em HTML/SVG. Os elementos focais são renderizados por um único mecanismo de cada vez.
-
-Os nomes e o XP inicial reproduzem o perfil de exemplo da referência. Não representam uma conta autenticada.
-
-A textura da Terra foi obtida do exemplo público `earth-blue-marble.jpg` de Three Globe (https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg). Os arquivos visuais usados na página estão otimizados em WebP; as imagens originais de geração não são necessárias para executar o projeto.
+Projeto de Renan (renancodando).
