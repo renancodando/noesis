@@ -1,0 +1,370 @@
+{
+ "autoria": "Renan | renancodando",
+ "titulo": "Cultura e transformações sociais",
+ "resumo": "Cultura é tudo o que aprendemos por viver com outros: língua, técnicas, crenças, gostos, regras. Nesta aula você distingue cultura de natureza, entende como normas são aprendidas e questionadas, examina como movimentos sociais e tecnologias transformam sociedades e aprende a ler a mudança social sem cair em nostalgia nem em euforia.",
+ "duracao": 35,
+ "nivel": 2,
+ "objetivos": [
+  "Definir cultura como conjunto aprendido e compartilhado de práticas, símbolos e significados.",
+  "Explicar socialização e o papel das normas, sanções e papéis sociais.",
+  "Distinguir diversidade cultural de desigualdade e reconhecer o etnocentrismo.",
+  "Identificar motores de mudança social: técnica, economia, movimentos sociais, contato entre culturas.",
+  "Analisar um movimento social a partir de reivindicação, repertório de ação e resultados."
+ ],
+ "prerequisitos": [
+  "sociedade/organizacao-instituicoes"
+ ],
+ "conceitos": [
+  {
+   "id": "cultura",
+   "nome": "Cultura",
+   "definicao": "Conjunto de práticas, técnicas, símbolos, valores e significados aprendidos e compartilhados por um grupo, transmitidos entre gerações e sempre em transformação."
+  },
+  {
+   "id": "socializacao",
+   "nome": "Socialização",
+   "definicao": "Processo pelo qual uma pessoa aprende, desde a infância, as normas, os papéis e os valores do grupo em que vive, pela família, escola, trabalho, mídia e pares."
+  },
+  {
+   "id": "norma-sancao",
+   "nome": "Normas e sanções",
+   "definicao": "Normas são regras de conduta esperadas, formais (leis) ou informais (costumes); sanções são as reações, positivas ou negativas, que as sustentam."
+  },
+  {
+   "id": "etnocentrismo",
+   "nome": "Etnocentrismo e relativização",
+   "definicao": "Etnocentrismo é julgar outra cultura pelos padrões da própria como se fossem universais; relativizar é compreender uma prática em seu contexto antes de avaliá-la."
+  },
+  {
+   "id": "mudanca-social",
+   "nome": "Mudança social",
+   "definicao": "Transformação duradoura de estruturas, instituições, normas ou práticas de uma sociedade, impulsionada por técnica, economia, conflitos, movimentos sociais e contato entre culturas."
+  },
+  {
+   "id": "movimento-social",
+   "nome": "Movimento social",
+   "definicao": "Ação coletiva organizada e duradoura que busca mudar (ou impedir que mude) algo na sociedade, com reivindicação, identidade comum e repertório de ações como greves, marchas, petições e campanhas."
+  }
+ ],
+ "relacionados": [
+  "sociedade/organizacao-instituicoes",
+  "sociedade/democracia-cidadania",
+  "humanidades/sociedade-cultura",
+  "humanidades/fontes-historicas",
+  "geografia/demografia-urbanizacao"
+ ],
+ "laboratorios": [
+  "crono"
+ ],
+ "blocos": [
+  {
+   "tipo": "texto",
+   "titulo": "O que é aprendido e o que é herdado",
+   "html": "<p>Um bebê nascido em qualquer lugar do mundo pode aprender qualquer língua, qualquer modo de comer, qualquer religião. O que ele vai aprender depende de onde cresce. Essa é a diferença central entre natureza e <strong>cultura</strong>: a capacidade de falar é biológica, mas o português é cultural. Cultura inclui o visível (comida, roupa, música, ferramentas) e o invisível (noções de tempo, de respeito, de limpeza, de família). Nada disso é fixo: a cultura de um grupo hoje não é a de cinquenta anos atrás.</p><p>O erro mais comum é tratar a própria cultura como “o normal” e as outras como desvios. Antropólogos chamam isso de <strong>etnocentrismo</strong>. Relativizar não significa que tudo é aceitável; significa entender uma prática no contexto em que faz sentido antes de julgá-la, e reconhecer que a nossa também é uma entre muitas.</p>"
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Como viramos membros de uma sociedade",
+   "html": "<p>Ninguém nasce sabendo as regras. A <strong>socialização</strong> começa na família (primária) e continua na escola, no trabalho, nos grupos de amigos e na mídia (secundária). Aprendemos <strong>normas</strong>: algumas são leis escritas, com sanções formais como multas; a maioria é costume, sustentada por sanções informais, como um olhar de reprovação ou um elogio. Aprendemos também <strong>papéis</strong>: o que se espera de um aluno, de uma mãe, de um cliente, de um torcedor. Papéis podem entrar em conflito (o trabalhador que é pai e precisa escolher entre uma reunião e a escola do filho), e é nesses conflitos que as normas ficam visíveis e começam a ser discutidas.</p>"
+  },
+  {
+   "tipo": "destaque",
+   "variante": "atencao",
+   "titulo": "Diversidade não é desigualdade",
+   "html": "<p>Dizer que duas culturas são diferentes não diz nada sobre qual é melhor; dizer que dois grupos têm acesso desigual a direitos é uma afirmação sobre justiça. Confundir as duas leva a dois erros simétricos: tratar desigualdade como “diferença cultural” (e não corrigi-la) ou tratar diferença como atraso (e tentar apagá-la).</p>"
+  },
+  {
+   "tipo": "texto",
+   "titulo": "O que move a mudança",
+   "html": "<p>Sociedades mudam por vários motores que se combinam. A <strong>técnica</strong>: a imprensa, a máquina a vapor, a pílula anticoncepcional e a internet reorganizaram trabalho, família e comunicação. A <strong>economia</strong>: a industrialização levou milhões do campo à cidade; no Brasil, a população urbana ultrapassou a rural na década de 1960, segundo os censos. O <strong>contato entre culturas</strong>: comércio, migração e mídia misturam práticas, e nenhuma cultura “pura” resiste à história. E o <strong>conflito organizado</strong>: pessoas que se juntam para exigir mudanças, isto é, movimentos sociais.</p><p>Mudança raramente é unânime nem linear: ganhos convivem com perdas, e grupos diferentes avaliam a mesma mudança de modos opostos. Por isso, análise de mudança social precisa perguntar: o que mudou, para quem, com que custos e quem decidiu.</p>"
+  },
+  {
+   "tipo": "interativo",
+   "etapa": "explorar",
+   "componente": "linha-do-tempo",
+   "titulo": "Técnica, política e cultura na mesma linha",
+   "instrucao": "Ative e desative as camadas da linha do tempo e observe como invenções técnicas, acontecimentos políticos e marcos culturais se aproximam no tempo. Abra os eventos para ler o contexto e anote dois pares de eventos de camadas diferentes separados por menos de vinte anos.",
+   "parametros": {
+    "nota": "A linha do tempo mostra uma seleção de eventos, não a totalidade; a proximidade no tempo é um convite a investigar relações, não uma prova delas."
+   }
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Movimentos sociais: anatomia",
+   "html": "<p>Um <strong>movimento social</strong> não é um protesto isolado; é ação coletiva que dura, tem uma <strong>reivindicação</strong> (o que quer mudar), uma <strong>identidade</strong> (quem são “nós”) e um <strong>repertório</strong> de ações: greves, marchas, boicotes, petições, ocupações, campanhas, processos judiciais. No Brasil, o movimento abolicionista do século XIX combinou jornais, fugas organizadas e pressão parlamentar até a Lei Áurea de 1888. O movimento operário do início do século XX usou greves, como a greve geral de 1917 em São Paulo, para obter limites de jornada. Os movimentos negro, feminista, indígena, LGBT e ambientalista transformaram leis e costumes nas últimas décadas: a Constituição de 1988 reconheceu direitos originários dos povos indígenas sobre suas terras e criminalizou o racismo, resultado de décadas de mobilização.</p><p>Movimentos também encontram <strong>contramovimentos</strong>, e seus resultados são sempre parciais e disputados. Avaliar um movimento exige olhar para as leis que mudou, para as práticas cotidianas que alterou e para o que ficou por fazer.</p>"
+  },
+  {
+   "tipo": "comparacao",
+   "titulo": "Mudança por cima e por baixo",
+   "colunas": [
+    {
+     "titulo": "Mudança institucional (por cima)",
+     "html": "<p>Lei, decreto, decisão judicial. Rápida de promulgar, lenta de aplicar. Depende de quem tem poder formal.</p><p>Exemplo: o voto feminino no Brasil, garantido pelo Código Eleitoral de 1932.</p>"
+    },
+    {
+     "titulo": "Mudança cotidiana (por baixo)",
+     "html": "<p>Costume, linguagem, gosto, hábito. Lenta de começar, difícil de reverter. Depende de milhões de decisões pequenas.</p><p>Exemplo: a presença das mulheres na universidade, que passou de exceção a maioria das matrículas ao longo do século XX.</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Cultura digital",
+   "html": "<p>A internet é a transformação técnica da nossa época. Ela baixou o custo de publicar e de se organizar: movimentos convocam atos em horas, culturas minoritárias encontram público, informação circula sem passar pelos filtros antigos. Também trouxe problemas novos: desinformação em escala, concentração de atenção em poucas plataformas, vigilância comercial e discursos de ódio amplificados por algoritmos de recomendação. Analisar a cultura digital com as ferramentas desta aula significa perguntar: que normas estão sendo aprendidas nas redes, quem define as sanções, que papéis surgiram e quem ganha e quem perde com cada mudança.</p>"
+  },
+  {
+   "tipo": "pergunta",
+   "enunciado": "Um aplicativo de transporte muda a forma como milhares de pessoas trabalham. Isso é mudança social? Que perguntas você faria para avaliá-la?",
+   "resposta": "<p>Sim, se for duradoura e alterar práticas e relações de trabalho. Perguntas: o que mudou (vínculo, horários, renda)? Para quem (motoristas, passageiros, empresas de táxi)? Com que custos (proteção social, trânsito)? Quem decidiu (uma empresa privada, sem deliberação pública)? E que normas e sanções regulam a nova prática?</p>"
+  }
+ ],
+ "exercicios": [
+  {
+   "id": "e1",
+   "tipo": "multipla-escolha",
+   "conceito": "cultura",
+   "enunciado": "<p>Qual das alternativas é um exemplo de traço cultural, e não natural?</p>",
+   "opcoes": [
+    "A necessidade de dormir",
+    "Comer com talheres, com as mãos ou com pauzinhos",
+    "A capacidade de aprender uma língua",
+    "O crescimento dos dentes"
+   ],
+   "correta": 1,
+   "feedback": {
+    "correta": "O modo de comer é aprendido e varia entre grupos; a necessidade de comer é biológica.",
+    "incorreta": "Procure o que varia de um grupo humano para outro e é aprendido.",
+    "porOpcao": {
+     "0": "Necessidade biológica universal; os horários de dormir, sim, variam culturalmente.",
+     "2": "A capacidade é biológica; a língua específica é cultural.",
+     "3": "Processo biológico, igual em todas as culturas."
+    }
+   },
+   "dicas": [
+    "Cultura é o que se aprende vivendo com outros.",
+    "O que todo ser humano faz igual não é cultural."
+   ]
+  },
+  {
+   "id": "e2",
+   "tipo": "associacao",
+   "conceito": "norma-sancao",
+   "enunciado": "<p>Classifique cada situação.</p>",
+   "pares": [
+    [
+     "Multa por estacionar em vaga reservada",
+     "Sanção formal negativa"
+    ],
+    [
+     "Aplausos ao final de uma apresentação",
+     "Sanção informal positiva"
+    ],
+    [
+     "Silêncio constrangido quando alguém fura a fila",
+     "Sanção informal negativa"
+    ],
+    [
+     "Medalha concedida pelo Estado a um pesquisador",
+     "Sanção formal positiva"
+    ]
+   ],
+   "feedback": {
+    "correta": "Formal vem de instituições com regras escritas; informal vem do grupo. Ambas podem premiar ou punir.",
+    "incorreta": "Pergunte: quem aplica (instituição ou grupo)? E a reação é prêmio ou castigo?"
+   },
+   "dicas": [
+    "Formal: regra escrita e autoridade.",
+    "Positiva: recompensa."
+   ]
+  },
+  {
+   "id": "e3",
+   "tipo": "verdadeiro-falso",
+   "conceito": "etnocentrismo",
+   "enunciado": "<p>Julgue as afirmações.</p>",
+   "afirmacoes": [
+    {
+     "texto": "Considerar estranho um costume alimentar de outro país é um sinal natural de etnocentrismo, que pode ser revisto com conhecimento.",
+     "valor": true,
+     "explicacao": "A estranheza inicial é comum; o etnocentrismo está em tomá-la como julgamento definitivo."
+    },
+    {
+     "texto": "Relativizar uma prática significa aceitar qualquer coisa que uma cultura faça.",
+     "valor": false,
+     "explicacao": "Relativizar é compreender no contexto; avaliar continua possível, com base em direitos e consequências."
+    },
+    {
+     "texto": "Existem culturas humanas que nunca mudaram.",
+     "valor": false,
+     "explicacao": "Toda cultura muda, por contato, técnica, conflito e invenção, mesmo que lentamente."
+    },
+    {
+     "texto": "Diferença cultural e desigualdade social são a mesma coisa.",
+     "valor": false,
+     "explicacao": "Diferença é sobre práticas; desigualdade é sobre acesso a recursos e direitos."
+    }
+   ],
+   "feedback": {
+    "correta": "Estranhar é humano; julgar sem compreender é etnocentrismo; compreender não impede avaliar.",
+    "incorreta": "Releia a diferença entre relativizar e aceitar tudo, e entre diferença e desigualdade."
+   },
+   "dicas": [
+    "Relativizar é entender antes de julgar.",
+    "Culturas são processos, não museus."
+   ]
+  },
+  {
+   "id": "e4",
+   "tipo": "ordenacao",
+   "conceito": "movimento-social",
+   "enunciado": "<p>Ordene as etapas típicas pelas quais uma reivindicação coletiva se transforma em mudança institucional.</p>",
+   "itens": [
+    "Pessoas afetadas por um problema o reconhecem como injustiça e não como fatalidade",
+    "Formam uma identidade comum e uma organização",
+    "Usam um repertório de ações (greves, marchas, petições, processos)",
+    "Ganham apoio de parte da opinião pública e de aliados nas instituições",
+    "Uma lei ou decisão incorpora parte da reivindicação",
+    "A aplicação cotidiana da nova regra é disputada e fiscalizada"
+   ],
+   "feedback": {
+    "correta": "Reconhecer, organizar, agir, ganhar aliados, institucionalizar, fiscalizar: um ciclo que raramente termina.",
+    "incorreta": "A organização vem antes das ações; a lei vem depois do apoio público; a fiscalização é a etapa final."
+   },
+   "dicas": [
+    "Antes de agir é preciso se reconhecer como grupo.",
+    "A lei não é o fim: precisa ser aplicada."
+   ]
+  },
+  {
+   "id": "e5",
+   "tipo": "interpretacao",
+   "conceito": "mudanca-social",
+   "enunciado": "<p>Leia e responda.</p>",
+   "documento": "<p>“Entre 1940 e 2010, a proporção de brasileiros vivendo em cidades passou de cerca de um terço para mais de quatro quintos. No mesmo período, o número médio de filhos por mulher caiu de mais de seis para menos de dois, a expectativa de vida subiu em mais de trinta anos e a proporção de mulheres na força de trabalho cresceu de forma contínua.”</p>",
+   "fonte": "Síntese a partir de tendências registradas pelos censos demográficos brasileiros; valores arredondados.",
+   "perguntas": [
+    {
+     "enunciado": "Que motores de mudança social ajudam a explicar a queda do número de filhos?",
+     "opcoes": [
+      "Urbanização, trabalho feminino remunerado, escolaridade e acesso a métodos contraceptivos, combinados",
+      "Apenas uma lei que limitou o número de filhos",
+      "Uma mudança genética na população",
+      "Nenhum; o número de filhos é fixo em cada cultura"
+     ],
+     "correta": 0,
+     "explicacao": "A transição demográfica resulta de fatores econômicos, técnicos e culturais que se reforçam; o Brasil não teve lei de limitação de filhos."
+    },
+    {
+     "enunciado": "Por que o texto não permite afirmar que a vida de todos melhorou igualmente?",
+     "opcoes": [
+      "Porque médias nacionais escondem diferenças entre regiões, classes e grupos",
+      "Porque os dados são falsos",
+      "Porque expectativa de vida não importa",
+      "Porque cidades são sempre piores que o campo"
+     ],
+     "correta": 0,
+     "explicacao": "Mudança social tem distribuição desigual; perguntar “para quem” é obrigatório."
+    },
+    {
+     "enunciado": "A entrada das mulheres no mercado de trabalho é melhor descrita como:",
+     "opcoes": [
+      "Mudança cotidiana e institucional ao mesmo tempo, com movimentos sociais e necessidade econômica como motores",
+      "Apenas uma decisão legal",
+      "Um fenômeno sem relação com a queda da fecundidade",
+      "Uma mudança técnica"
+     ],
+     "correta": 0,
+     "explicacao": "Leis trabalhistas, luta feminista, urbanização e menos filhos interagiram; separar causas únicas empobrece a análise."
+    }
+   ],
+   "feedback": {
+    "correta": "Você leu a mudança como combinação de motores e perguntou pela distribuição.",
+    "incorreta": "Procure a resposta que combina fatores e reconhece desigualdade."
+   },
+   "dicas": [
+    "Mudanças grandes têm causas múltiplas.",
+    "Média nacional não é experiência de cada um."
+   ]
+  },
+  {
+   "id": "e6",
+   "tipo": "resposta-aberta",
+   "conceito": "movimento-social",
+   "enunciado": "<p>Escolha um movimento social (histórico ou atual, brasileiro ou não) e analise-o em quatro pontos: reivindicação, identidade, repertório de ações e resultados, incluindo o que ficou por fazer.</p>",
+   "criterios": [
+    "Identifica a reivindicação central com precisão",
+    "Descreve quem compõe o movimento e como se reconhece",
+    "Cita pelo menos duas formas de ação do repertório",
+    "Avalia resultados institucionais e cotidianos, reconhecendo limites"
+   ],
+   "exemplo": "<p>O movimento abolicionista brasileiro reivindicava o fim da escravidão. Reunia pessoas escravizadas e libertas, jornalistas, advogados e parte da classe média urbana, identificadas pela recusa da escravidão como instituição legítima. Seu repertório incluiu jornais, comícios, fundos para comprar alforrias, defesa em tribunais e apoio a fugas coletivas. Resultou nas leis de 1871, 1885 e 1888, mas a abolição veio sem terra, educação ou indenização para os libertos, e a desigualdade racial persistiu, o que o movimento negro do século XX continuou a enfrentar.</p>",
+   "minimoPalavras": 80,
+   "dicas": [
+    "Reivindicação é o que se quer mudar.",
+    "Resultados incluem leis e práticas; limites também contam."
+   ]
+  }
+ ],
+ "pratica": {
+  "titulo": "Uma mudança em quatro perguntas",
+  "descricao": "<p>Escolha uma transformação social que você presenciou ou conhece bem (o uso de celulares nas escolas, o trabalho por aplicativo, a mudança nos arranjos familiares, a popularização de um gênero musical). Na linha do tempo do CRONO, situe-a em relação a pelo menos dois eventos técnicos ou políticos. Depois, nas anotações, responda às quatro perguntas da aula: o que mudou, para quem, com que custos e quem decidiu.</p>",
+  "passos": [
+   "Escolha a transformação e descreva-a em duas frases.",
+   "Na linha do tempo, encontre dois eventos (técnicos ou políticos) relacionados e registre o intervalo entre eles e a sua transformação.",
+   "Responda às quatro perguntas em um parágrafo cada.",
+   "Identifique uma norma informal que mudou e uma sanção que a sustentava."
+  ],
+  "componente": "linha-do-tempo",
+  "verificacao": {
+   "tipo": "checklist",
+   "itens": [
+    "Descrevi a transformação escolhida.",
+    "Situei-a em relação a dois eventos da linha do tempo.",
+    "Respondi às quatro perguntas (o quê, para quem, custos, quem decidiu).",
+    "Identifiquei uma norma informal que mudou e sua sanção."
+   ]
+  }
+ },
+ "revisao": [
+  {
+   "pergunta": "O que diferencia cultura de natureza?",
+   "resposta": "<p>Cultura é o que se aprende vivendo em grupo e varia entre sociedades; natureza é o que é biológico e comum a todos os humanos.</p>",
+   "conceito": "cultura"
+  },
+  {
+   "pergunta": "O que é socialização e quais são suas principais agências?",
+   "resposta": "<p>O processo de aprender normas, papéis e valores; família, escola, trabalho, grupos de pares e mídia.</p>",
+   "conceito": "socializacao"
+  },
+  {
+   "pergunta": "Dê um exemplo de sanção informal negativa.",
+   "resposta": "<p>Um olhar de reprovação ou o silêncio constrangido diante de quem fura a fila.</p>",
+   "conceito": "norma-sancao"
+  },
+  {
+   "pergunta": "O que é etnocentrismo?",
+   "resposta": "<p>Julgar outras culturas pelos padrões da própria, tomados como universais.</p>",
+   "conceito": "etnocentrismo"
+  },
+  {
+   "pergunta": "Quais são os principais motores da mudança social?",
+   "resposta": "<p>Técnica, economia, contato entre culturas e conflitos organizados (movimentos sociais).</p>",
+   "conceito": "mudanca-social"
+  },
+  {
+   "pergunta": "Quais são os três componentes de um movimento social?",
+   "resposta": "<p>Reivindicação, identidade comum e repertório de ações.</p>",
+   "conceito": "movimento-social"
+  }
+ ],
+ "material": [
+  {
+   "titulo": "Aula “Sociedade e cultura”",
+   "descricao": "a perspectiva das humanidades sobre os mesmos temas."
+  },
+  {
+   "titulo": "Laboratório CRONO",
+   "descricao": "linha do tempo e rede de causas para investigar transformações."
+  }
+ ]
+}

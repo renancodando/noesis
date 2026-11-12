@@ -1,0 +1,117 @@
+{
+ "autoria": "Renan | renancodando",
+ "disciplinas": [
+  {
+   "id": "exatas", "nome": "Ciências Exatas", "icone": "atomo", "cor": "#a69de9",
+   "descricao": "Padrões, números e fenômenos que nos ajudam a compreender o universo.",
+   "pergunta": "E se uma equação pudesse explicar o caminho de uma estrela?",
+   "apresentacao": "Aqui a matemática e a física são estudadas como linguagens para descrever o mundo: proporções que organizam receitas e mapas, equações que equilibram quantidades, figuras que ocupam espaço, funções que descrevem mudanças e leis que explicam o movimento e a energia.",
+   "jornada": {
+    "titulo": "Da proporção ao movimento",
+    "descricao": "Uma jornada introdutória que parte dos números e chega às leis do movimento, passando por álgebra, geometria, funções e probabilidade.",
+    "etapas": ["aritmetica", "algebra", "geometria", "funcoes", "probabilidade", "fisica"],
+    "ramos": [
+     {"tipo": "laboratorio", "id": "axioma", "apos": "funcoes"},
+     {"tipo": "laboratorio", "id": "prisma", "apos": "fisica"},
+     {"tipo": "projeto", "id": "ponte", "apos": "geometria"}
+    ]
+   }
+  },
+  {
+   "id": "vida", "nome": "Ciências da Vida", "icone": "folha", "cor": "#7ebba1",
+   "descricao": "Da molécula ao ecossistema, uma investigação sobre o que significa estar vivo.",
+   "pergunta": "O que uma célula pode nos contar sobre a vida inteira?",
+   "apresentacao": "A biologia é estudada em escalas: a célula e suas estruturas, a herança que atravessa gerações, os sistemas que mantêm o corpo em funcionamento, a energia que entra nos ecossistemas pela fotossíntese e as relações que moldam a evolução.",
+   "jornada": {
+    "titulo": "Da célula ao ecossistema",
+    "descricao": "Uma jornada que começa na organização celular e termina nas relações entre organismos e ambiente.",
+    "etapas": ["celula", "genetica", "corpo-humano", "fotossintese", "ecologia-evolucao"],
+    "ramos": [
+     {"tipo": "laboratorio", "id": "interior", "apos": "corpo-humano"}
+    ]
+   }
+  },
+  {
+   "id": "humanidades", "nome": "Humanidades", "icone": "coluna", "cor": "#c8ae83",
+   "descricao": "Histórias, pensamentos e formas de viver que atravessam os séculos.",
+   "pergunta": "Como o passado continua presente nas nossas escolhas?",
+   "apresentacao": "Filosofia, ética, história do pensamento, sociologia e antropologia são abordadas como práticas de perguntar bem: comparar argumentos, interpretar fontes, reconhecer pressupostos e distinguir fatos de interpretações.",
+   "jornada": {
+    "titulo": "A arte de perguntar",
+    "descricao": "Uma jornada pelo pensamento: das primeiras perguntas filosóficas à leitura crítica de fontes históricas.",
+    "etapas": ["filosofia", "etica", "conhecimento-ciencia", "sociedade-cultura", "fontes-historicas"],
+    "ramos": [
+     {"tipo": "laboratorio", "id": "crono", "apos": "fontes-historicas"},
+     {"tipo": "projeto", "id": "investigacao", "apos": "fontes-historicas"}
+    ]
+   }
+  },
+  {
+   "id": "tecnologia", "nome": "Tecnologia", "icone": "engrenagem", "cor": "#a3b8c4",
+   "descricao": "Conhecimento que se transforma em ferramentas, invenções e novas possibilidades.",
+   "pergunta": "O que acontece entre uma ideia e um circuito que funciona?",
+   "apresentacao": "Computação como construção: lógica e algoritmos, a estrutura de uma página com HTML, a apresentação com CSS, o comportamento com JavaScript e os caminhos que os dados percorrem pela internet, com atenção à segurança.",
+   "jornada": {
+    "titulo": "Da lógica à página viva",
+    "descricao": "Uma jornada que vai do pensamento computacional à construção de páginas interativas e ao funcionamento da internet.",
+    "etapas": ["logica-algoritmos", "html", "css", "javascript", "redes-internet"],
+    "ramos": [
+     {"tipo": "laboratorio", "id": "nucleo", "apos": "logica-algoritmos"},
+     {"tipo": "projeto", "id": "calculadora", "apos": "javascript"},
+     {"tipo": "projeto", "id": "pagina-web", "apos": "javascript"}
+    ]
+   }
+  },
+  {
+   "id": "geografia", "nome": "Geografia", "icone": "montanha", "cor": "#88acba",
+   "descricao": "Paisagens, territórios e as conexões entre a Terra e quem a habita.",
+   "pergunta": "Por que uma montanha muda o caminho da água e das pessoas?",
+   "apresentacao": "A geografia é estudada com mapas, coordenadas, perfis de relevo, modelos climáticos e dados demográficos. O objetivo é ler o espaço: como a natureza organiza os lugares e como as sociedades os transformam.",
+   "jornada": {
+    "titulo": "Ler o espaço",
+    "descricao": "Uma jornada da cartografia às transformações ambientais, passando por relevo, clima e população.",
+    "etapas": ["cartografia", "relevo-hidrografia", "clima-biomas", "demografia-urbanizacao", "recursos-ambiente"],
+    "ramos": []
+   }
+  },
+  {
+   "id": "sociedade", "nome": "Sociedade", "icone": "pessoas", "cor": "#6d91d8",
+   "descricao": "As relações, as escolhas e as estruturas que desenham a vida em comunidade.",
+   "pergunta": "Como as nossas decisões transformam o lugar onde vivemos?",
+   "apresentacao": "Instituições, economia, trabalho, democracia e direitos são explorados com modelos simples que mostram como decisões individuais e regras coletivas produzem consequências para todos. Fatos, interpretações e hipóteses são sempre diferenciados.",
+   "jornada": {
+    "titulo": "Viver em comum",
+    "descricao": "Uma jornada sobre como as sociedades se organizam, produzem, decidem e se transformam.",
+    "etapas": ["organizacao-instituicoes", "economia-trabalho", "democracia-cidadania", "desigualdade-direitos", "cultura-transformacoes"],
+    "ramos": []
+   }
+  },
+  {
+   "id": "artes", "nome": "Artes", "icone": "paleta", "cor": "#d296a8",
+   "descricao": "Cores, sons, formas e ideias como caminhos para sentir e compreender.",
+   "pergunta": "De quantas maneiras podemos olhar para a mesma coisa?",
+   "apresentacao": "As artes são estudadas fazendo: desenhar com atenção à composição, misturar e contrastar cores, construir profundidade com perspectiva, organizar o tempo com ritmo e dar forma a narrativas.",
+   "jornada": {
+    "titulo": "Olhar, compor, criar",
+    "descricao": "Uma jornada prática por desenho, cor, perspectiva, música e narrativa visual.",
+    "etapas": ["composicao", "cor", "perspectiva", "musica-ritmo", "narrativa-visual"],
+    "ramos": [
+     {"tipo": "laboratorio", "id": "atelie", "apos": "cor"},
+     {"tipo": "projeto", "id": "composicao-visual", "apos": "perspectiva"}
+    ]
+   }
+  },
+  {
+   "id": "linguagens", "nome": "Linguagens", "icone": "livro", "cor": "#d6b06e",
+   "descricao": "Palavras, símbolos e narrativas que conectam pessoas e conhecimentos.",
+   "pergunta": "Como uma história pode mudar a maneira de entender o mundo?",
+   "apresentacao": "Ler com profundidade, compreender a gramática em uso, escrever com clareza, argumentar com honestidade e criar com liberdade. As atividades pedem que você construa, reorganize, compare e revise textos.",
+   "jornada": {
+    "titulo": "Ler e escrever o mundo",
+    "descricao": "Uma jornada da leitura atenta à escrita criativa, passando por gramática em contexto, produção textual e argumentação.",
+    "etapas": ["leitura", "gramatica-em-uso", "producao-textual", "argumentacao", "literatura-criacao"],
+    "ramos": []
+   }
+  }
+ ]
+}

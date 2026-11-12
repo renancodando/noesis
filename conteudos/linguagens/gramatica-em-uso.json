@@ -1,0 +1,379 @@
+{
+ "autoria": "Renan | renancodando",
+ "titulo": "Gramática em uso: coesão e sentido",
+ "resumo": "Gramática não é lista de proibições: é o conjunto de recursos que uma língua oferece para construir sentido. Nesta aula você estuda coesão (como as frases se ligam), os conectivos e as relações lógicas que exprimem, a concordância e a regência como instrumentos de clareza, a pontuação como organização do pensamento e a diferença entre variação linguística e erro.",
+ "duracao": 35,
+ "nivel": 2,
+ "objetivos": [
+  "Usar retomadas (pronomes, sinônimos, elipses) para dar coesão a um texto.",
+  "Escolher conectivos conforme a relação lógica (causa, oposição, consequência, condição, adição, exemplo).",
+  "Explicar concordância e regência como recursos de clareza, não como ritual.",
+  "Usar vírgula, ponto e ponto e vírgula para organizar unidades de sentido.",
+  "Distinguir variação linguística de inadequação ao contexto."
+ ],
+ "prerequisitos": [
+  "linguagens/leitura"
+ ],
+ "conceitos": [
+  {
+   "id": "coesao",
+   "nome": "Coesão",
+   "definicao": "Conjunto de ligações entre as partes de um texto: retomadas por pronome ou sinônimo (coesão referencial) e articulações por conectivos (coesão sequencial)."
+  },
+  {
+   "id": "conectivos",
+   "nome": "Conectivos e relações lógicas",
+   "definicao": "Palavras que articulam orações exprimindo causa (porque), consequência (portanto), oposição (mas, embora), condição (se), adição (além disso), exemplificação (por exemplo), tempo (quando)."
+  },
+  {
+   "id": "concordancia-regencia",
+   "nome": "Concordância e regência",
+   "definicao": "Concordância ajusta verbo e nomes ao sujeito e ao núcleo (número, pessoa, gênero); regência define as preposições que verbos e nomes pedem. Ambas evitam ambiguidade sobre quem faz o quê."
+  },
+  {
+   "id": "pontuacao",
+   "nome": "Pontuação",
+   "definicao": "Sinais que delimitam unidades de sentido: a vírgula separa termos e orações deslocadas (nunca sujeito de verbo), o ponto fecha a ideia, o ponto e vírgula liga ideias independentes mas próximas, os dois-pontos anunciam."
+  },
+  {
+   "id": "variacao",
+   "nome": "Variação linguística",
+   "definicao": "Toda língua varia por região, grupo social, idade e situação. Nenhuma variedade é errada em si; o que existe é adequação ou inadequação a cada contexto, e a norma-padrão é a variedade exigida em situações formais escritas."
+  },
+  {
+   "id": "ambiguidade",
+   "nome": "Ambiguidade",
+   "definicao": "Quando uma construção admite mais de uma leitura, por ordem das palavras, pronome sem referente claro ou pontuação ausente. Reescrever é o remédio."
+  }
+ ],
+ "relacionados": [
+  "linguagens/leitura",
+  "linguagens/producao-textual",
+  "linguagens/argumentacao",
+  "tecnologia/logica-algoritmos"
+ ],
+ "laboratorios": [],
+ "blocos": [
+  {
+   "tipo": "texto",
+   "titulo": "O que segura um texto",
+   "html": "<p>Um parágrafo não é uma pilha de frases. O que o torna um texto é a <strong>coesão</strong>: cada frase retoma algo da anterior e prepara a seguinte. Retomamos com <strong>pronomes</strong> (“ela”, “isso”, “cujo”), com <strong>sinônimos e hiperônimos</strong> (“o cachorro… o animal”), com <strong>elipse</strong> (omitir o que se entende) e com <strong>repetição</strong> controlada. E articulamos com <strong>conectivos</strong>, que não são enfeite: dizem ao leitor que relação existe entre duas ideias. “Choveu; o jogo foi adiado” deixa o leitor adivinhar; “como choveu, o jogo foi adiado” afirma uma causa.</p>"
+  },
+  {
+   "tipo": "interativo",
+   "etapa": "explorar",
+   "componente": "reorganizar-texto",
+   "titulo": "Reconstrua o parágrafo",
+   "instrucao": "As frases de um parágrafo foram embaralhadas. Use os conectivos e as retomadas como pistas para recolocá-las em ordem e verifique."
+  },
+  {
+   "tipo": "tabela",
+   "titulo": "Relações lógicas e seus conectivos",
+   "cabecalho": [
+    "Relação",
+    "Conectivos",
+    "Exemplo"
+   ],
+   "linhas": [
+    [
+     "Causa",
+     "porque, pois, já que, uma vez que",
+     "Ficou em casa porque estava doente."
+    ],
+    [
+     "Consequência",
+     "portanto, por isso, logo, de modo que",
+     "Estava doente; por isso ficou em casa."
+    ],
+    [
+     "Oposição",
+     "mas, porém, embora, apesar de",
+     "Estava doente, mas foi trabalhar."
+    ],
+    [
+     "Condição",
+     "se, caso, desde que",
+     "Se melhorar, vai amanhã."
+    ],
+    [
+     "Adição",
+     "e, além disso, também",
+     "Descansou e, além disso, tomou o remédio."
+    ],
+    [
+     "Exemplificação",
+     "por exemplo, como, isto é",
+     "Teve sintomas leves, como tosse."
+    ]
+   ]
+  },
+  {
+   "tipo": "interativo",
+   "etapa": "explorar",
+   "componente": "conectivos",
+   "titulo": "Escolha a ligação certa",
+   "instrucao": "Para cada par de orações, escolha o conectivo que exprime a relação lógica real entre elas. Depois verifique e leia as alternativas da mesma família."
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Concordância e regência servem à clareza",
+   "html": "<p>“Os documentos que o advogado entregou ao juiz foram arquivados”: o verbo no plural (“foram”) diz ao leitor que o arquivado foram os documentos, não o juiz. <strong>Concordância</strong> é um sistema de marcas que indica quem faz o quê e de quem se fala; quando falha em texto formal, o leitor perde a pista ou perde a confiança. <strong>Regência</strong> é a preposição que cada verbo pede: “assistir ao filme”, “preferir café a chá”, “chegar a casa”. Muitas regências da norma-padrão são convenção histórica, e a fala cotidiana as alterou (“assistir o filme”). Em contextos formais escritos, a convenção vale; em outros, não é erro, é variedade.</p>"
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Pontuar é organizar",
+   "html": "<p>A vírgula não marca respiração: marca estrutura. Separa itens de uma lista, isola termos deslocados (“Ontem, à noite, choveu”), delimita explicações (“Maria, minha vizinha, viajou”) e orações intercaladas. Não separa sujeito de verbo nem verbo de complemento: “Os alunos da turma da tarde, fizeram a prova” está mal pontuado. O <strong>ponto e vírgula</strong> liga orações independentes mas intimamente relacionadas; os <strong>dois-pontos</strong> anunciam explicação, lista ou fala. Uma frase ambígua costuma ser resolvida por vírgula ou por reescrita: “Não aceito, obrigado” e “Não, aceito, obrigado” dizem o oposto.</p>"
+  },
+  {
+   "tipo": "destaque",
+   "variante": "atencao",
+   "titulo": "Variedade não é erro",
+   "html": "<p>“Nós vai”, “a gente fomos”, “tu sabe” são formas de variedades reais do português brasileiro, com regras próprias e milhões de falantes. Chamá-las de erro é confundir língua com uma de suas variedades. O que a escola ensina é a norma-padrão escrita, exigida em provas, documentos e textos públicos; dominá-la amplia o repertório sem apagar as outras. Adequação é a palavra: cada situação pede uma variedade, e saber transitar entre elas é competência, não traição.</p>"
+  },
+  {
+   "tipo": "pergunta",
+   "enunciado": "“O professor disse ao aluno que ele estava errado.” Quem estava errado? Como resolver?",
+   "resposta": "<p>Ambíguo: “ele” pode retomar o professor ou o aluno. Reescrever: “O professor disse ao aluno: você está errado” ou “O professor admitiu ao aluno o próprio erro”. Pronomes precisam de referente inequívoco.</p>"
+  }
+ ],
+ "exercicios": [
+  {
+   "id": "e1",
+   "tipo": "lacunas",
+   "conceito": "conectivos",
+   "enunciado": "<p>Complete com o conectivo que exprime a relação indicada.</p>",
+   "texto": "A ponte foi fechada {{a}} apresentava rachaduras (causa). O trânsito, {{b}}, foi desviado (consequência). Os moradores reclamaram; {{c}} a prefeitura manteve a decisão (oposição).",
+   "lacunas": {
+    "a": [
+     "porque",
+     "já que",
+     "pois"
+    ],
+    "b": [
+     "portanto",
+     "por isso",
+     "assim"
+    ],
+    "c": [
+     "porém",
+     "mas",
+     "no entanto",
+     "contudo"
+    ]
+   },
+   "opcoes": {
+    "a": [
+     "porque",
+     "portanto",
+     "embora"
+    ],
+    "b": [
+     "porque",
+     "portanto",
+     "se"
+    ],
+    "c": [
+     "porém",
+     "portanto",
+     "porque"
+    ]
+   },
+   "feedback": {
+    "correta": "Causa, consequência e oposição exprimidas pelos conectivos certos.",
+    "incorreta": "Leia a relação entre parênteses e escolha a família correspondente."
+   },
+   "dicas": [
+    "Causa responde a “por quê?”.",
+    "Oposição contraria a expectativa."
+   ]
+  },
+  {
+   "id": "e2",
+   "tipo": "identificar-erro",
+   "conceito": "pontuacao",
+   "enunciado": "<p>Selecione a linha em que a vírgula separa indevidamente o sujeito do verbo.</p>",
+   "linhas": [
+    "Ontem, depois da chuva, a rua ficou alagada.",
+    "Os moradores do prédio da esquina, pediram ajuda à prefeitura.",
+    "A equipe, que chegou rápido, desobstruiu o bueiro.",
+    "Hoje, enfim, a água baixou."
+   ],
+   "erro": 1,
+   "feedback": {
+    "porLinha": {
+     "0": "Vírgulas isolam termos deslocados: correto.",
+     "2": "Vírgulas delimitam uma oração explicativa: correto.",
+     "3": "Vírgulas isolam advérbios deslocados: correto."
+    }
+   },
+   "explicacao": "“Os moradores do prédio da esquina” é o sujeito de “pediram”; nada deve separá-los. O tamanho do sujeito não justifica vírgula.",
+   "dicas": [
+    "Encontre o sujeito e o verbo de cada frase.",
+    "Sujeito longo não pede vírgula."
+   ]
+  },
+  {
+   "id": "e3",
+   "tipo": "multipla-escolha",
+   "conceito": "ambiguidade",
+   "enunciado": "<p>“Vi o homem com o binóculo.” Qual reescrita elimina a ambiguidade mantendo que o binóculo era meu?</p>",
+   "opcoes": [
+    "Com o binóculo, vi o homem.",
+    "Vi o homem que tinha um binóculo.",
+    "O homem com o binóculo me viu.",
+    "Vi com o homem o binóculo."
+   ],
+   "correta": 0,
+   "feedback": {
+    "correta": "Deslocar “com o binóculo” para o início o liga ao verbo “vi”, não ao homem.",
+    "incorreta": "Procure a versão em que o instrumento se liga claramente a quem vê.",
+    "porOpcao": {
+     "1": "Aqui o binóculo é do homem: resolve a ambiguidade, mas no sentido oposto.",
+     "2": "Inverte quem vê quem.",
+     "3": "Muda o sentido e continua estranho."
+    }
+   },
+   "dicas": [
+    "A posição do complemento define a que ele se liga.",
+    "Comece a frase pelo instrumento."
+   ]
+  },
+  {
+   "id": "e4",
+   "tipo": "verdadeiro-falso",
+   "conceito": "variacao",
+   "enunciado": "<p>Julgue as afirmações.</p>",
+   "afirmacoes": [
+    {
+     "texto": "“A gente vamos” é uma construção sem regras, típica de quem não sabe falar.",
+     "valor": false,
+     "explicacao": "É uma concordância presente em variedades populares, com regularidade própria; é inadequada à norma-padrão escrita, não “sem regras”."
+    },
+    {
+     "texto": "A norma-padrão é a variedade exigida em situações formais escritas.",
+     "valor": true,
+     "explicacao": "É sua função social, e por isso a escola a ensina."
+    },
+    {
+     "texto": "Saber transitar entre variedades é uma competência linguística.",
+     "valor": true,
+     "explicacao": "Adequar-se à situação é o que falantes competentes fazem."
+    },
+    {
+     "texto": "Regências como “assistir ao filme” são leis naturais da língua.",
+     "valor": false,
+     "explicacao": "São convenções históricas que a fala já alterou; valem na norma-padrão por convenção."
+    }
+   ],
+   "feedback": {
+    "correta": "Variedade tem regras; norma-padrão tem função; adequação é competência; regência é convenção.",
+    "incorreta": "Separe “inadequado ao contexto” de “errado em si”."
+   },
+   "dicas": [
+    "Toda variedade tem regularidade.",
+    "Convenção não é natureza."
+   ]
+  },
+  {
+   "id": "e5",
+   "tipo": "ordenacao",
+   "conceito": "coesao",
+   "enunciado": "<p>Ordene as frases para formar um parágrafo coeso, usando retomadas e conectivos como pistas.</p>",
+   "itens": [
+    "A biblioteca do bairro reabriu depois de dois anos fechada.",
+    "Ela ganhou um telhado novo e acervo ampliado.",
+    "Além disso, passou a abrir aos sábados.",
+    "Essa mudança atendeu a um pedido antigo dos moradores.",
+    "Por isso, a fila no primeiro sábado deu a volta no quarteirão."
+   ],
+   "feedback": {
+    "correta": "“Ela” retoma a biblioteca; “além disso” acrescenta; “essa mudança” retoma os sábados; “por isso” conclui.",
+    "incorreta": "Siga os pronomes: “ela” precisa de um referente anterior; “essa mudança” retoma a frase imediatamente anterior."
+   },
+   "dicas": [
+    "O pronome vem depois do nome que retoma.",
+    "“Por isso” fecha uma cadeia de causa."
+   ]
+  },
+  {
+   "id": "e6",
+   "tipo": "resposta-aberta",
+   "conceito": "concordancia-regencia",
+   "enunciado": "<p>Reescreva o trecho a seguir em norma-padrão, corrigindo coesão, concordância e pontuação, e explique três mudanças que fez e por quê: “Os problema do bairro que a gente reclama a anos, é falta de iluminação. E também de ônibus que passa pouco e as pessoas fica esperando muito tempo elas reclamam mas ninguém resolve.”</p>",
+   "criterios": [
+    "Produz uma versão em norma-padrão, com concordâncias ajustadas (problemas, reclamamos, passam, ficam)",
+    "Corrige “a anos” para “há anos” e retira a vírgula entre sujeito e verbo",
+    "Reorganiza as frases com conectivos e pontuação que exprimam as relações",
+    "Explica pelo menos três mudanças em termos de clareza ou adequação, sem tratar a variedade original como ignorância"
+   ],
+   "exemplo": "<p>“Os problemas do bairro de que reclamamos há anos são a falta de iluminação e a escassez de ônibus: eles passam pouco, e as pessoas ficam esperando muito tempo. Os moradores reclamam, mas ninguém resolve.” Mudanças: “há anos” indica tempo decorrido, enquanto “a anos” seria direção; a vírgula entre “anos” e “é” separava sujeito e verbo; os dois-pontos anunciam a explicação sobre os ônibus; o “mas” marca a oposição entre reclamar e não ser atendido. A versão original é compreensível e segue regras de sua variedade; a reescrita a adequa a um texto formal, como uma carta à prefeitura.</p>",
+   "minimoPalavras": 70,
+   "dicas": [
+    "Comece achando sujeito e verbo de cada oração.",
+    "“Há anos” é tempo passado."
+   ]
+  }
+ ],
+ "pratica": {
+  "titulo": "Revisão de coesão",
+  "descricao": "<p>Pegue um texto seu de pelo menos dois parágrafos (uma mensagem longa, um trabalho, um texto desta plataforma). Sublinhe cada pronome e verifique se o referente é inequívoco; marque cada conectivo e pergunte se exprime a relação que você quis; verifique cada vírgula contra as regras da aula. Reescreva o texto e registre nas anotações as mudanças e seus motivos.</p>",
+  "passos": [
+   "Escolha o texto e identifique todos os pronomes e seus referentes.",
+   "Liste os conectivos e a relação lógica de cada um; troque os que não correspondem.",
+   "Confira as vírgulas: nenhuma entre sujeito e verbo; termos deslocados isolados.",
+   "Reescreva e anote três mudanças com justificativa."
+  ],
+  "componente": "conectivos",
+  "verificacao": {
+   "tipo": "checklist",
+   "itens": [
+    "Verifiquei o referente de cada pronome.",
+    "Conferi a relação lógica de cada conectivo.",
+    "Revisei as vírgulas conforme as regras da aula.",
+    "Anotei três mudanças justificadas."
+   ]
+  }
+ },
+ "revisao": [
+  {
+   "pergunta": "Quais são os principais recursos de coesão referencial?",
+   "resposta": "<p>Pronomes, sinônimos e hiperônimos, elipse e repetição controlada.</p>",
+   "conceito": "coesao"
+  },
+  {
+   "pergunta": "Que relação exprimem “portanto” e “embora”?",
+   "resposta": "<p>“Portanto” exprime consequência; “embora”, oposição (concessão).</p>",
+   "conceito": "conectivos"
+  },
+  {
+   "pergunta": "Para que serve a concordância num texto?",
+   "resposta": "<p>Para marcar quem faz o quê e de quem se fala, evitando ambiguidade.</p>",
+   "conceito": "concordancia-regencia"
+  },
+  {
+   "pergunta": "Cite uma posição em que a vírgula não pode aparecer.",
+   "resposta": "<p>Entre sujeito e verbo (ou entre verbo e seu complemento).</p>",
+   "conceito": "pontuacao"
+  },
+  {
+   "pergunta": "Por que “nós vai” não é um erro em si?",
+   "resposta": "<p>Porque é uma forma regular de variedades reais da língua; é inadequada à norma-padrão escrita, não errada em absoluto.</p>",
+   "conceito": "variacao"
+  },
+  {
+   "pergunta": "Como resolver um pronome ambíguo?",
+   "resposta": "<p>Reescrevendo a frase para que o referente seja único, substituindo o pronome pelo nome se necessário.</p>",
+   "conceito": "ambiguidade"
+  }
+ ],
+ "material": [
+  {
+   "titulo": "Aula “Produção textual”",
+   "descricao": "aplicar coesão e pontuação ao planejar e revisar textos."
+  },
+  {
+   "titulo": "Aula “Lógica e algoritmos”",
+   "descricao": "relações lógicas (se, então, e, ou) em outra linguagem."
+  }
+ ]
+}

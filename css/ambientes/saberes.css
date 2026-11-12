@@ -1,0 +1,43 @@
+/* Renan | renancodando */
+.atlas{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:16px;margin:10px 0 28px}
+.sala{position:relative;display:flex;gap:16px;align-items:stretch;min-height:150px;padding:20px 22px 20px 30px;border:1px solid var(--linha);border-radius:4px 14px 14px 4px;background:linear-gradient(120deg,#1a2a32e8,#10212af2 60%),repeating-linear-gradient(90deg,#ffffff03 0 2px,transparent 2px 6px);color:inherit;overflow:hidden;transition:transform .3s var(--curva),border-color .3s,box-shadow .3s;box-shadow:var(--sombra-suave)}
+.sala:hover{transform:translateY(-4px);border-color:#e1bd7a99;box-shadow:0 14px 34px #0008,0 0 18px color-mix(in srgb,var(--cor) 25%,transparent)}
+.sala .lombada{position:absolute;left:0;top:0;bottom:0;width:12px;background:linear-gradient(180deg,color-mix(in srgb,var(--cor) 80%,#fff),var(--cor) 40%,color-mix(in srgb,var(--cor) 60%,#000));box-shadow:inset -2px 0 4px #0006}
+.sala .lombada:after{content:'';position:absolute;inset:14px 3px;border-top:1px solid #ffffff55;border-bottom:1px solid #ffffff55}
+.icone-sala{width:52px;height:52px;flex-shrink:0;display:grid;place-items:center;border-radius:50%;border:1px solid color-mix(in srgb,var(--cor) 60%,transparent);background:radial-gradient(circle at 35% 30%,color-mix(in srgb,var(--cor) 35%,#0b1a22),#0b1a22 75%);box-shadow:0 0 18px color-mix(in srgb,var(--cor) 25%,transparent)}
+.icone-sala .icone{width:26px;height:26px;color:var(--cor)}
+.texto-sala{display:flex;flex-direction:column;flex:1;min-width:0}
+.texto-sala strong{font:500 20px/1.2 var(--fonte-serif);color:#f0e1bd;margin-bottom:6px}
+.texto-sala small{font-size:12px;line-height:1.55;color:#b4c3c5;flex:1}
+.progresso-sala{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;margin-top:12px}
+.progresso-sala em{font-style:normal;font-size:10.5px;color:#a9bcc2;white-space:nowrap}
+.seta-sala{align-self:center;font-size:22px;color:#c9a967;opacity:.7}
+.rodape-saberes .alinhado{gap:30px;align-items:flex-start}
+.rodape-saberes .alinhado>div:first-child{flex:1;min-width:260px}
+.indicadores-saberes{display:flex;gap:26px;flex-wrap:wrap}
+.indicadores-saberes>div{text-align:center}
+.cabecalho-disciplina .titulo-disciplina{gap:18px;margin-bottom:12px}
+.emblema-disciplina{width:68px;height:68px;flex-shrink:0;display:grid;place-items:center;border-radius:50%;border:1px solid color-mix(in srgb,var(--cor) 60%,transparent);background:radial-gradient(circle at 35% 30%,color-mix(in srgb,var(--cor) 40%,#0b1a22),#0b1a22 75%);box-shadow:0 0 26px color-mix(in srgb,var(--cor) 30%,transparent)}
+.emblema-disciplina .icone{width:34px;height:34px;color:var(--cor)}
+.cabecalho-disciplina h1{margin:0}
+.cabecalho-disciplina .pergunta-dominio{max-width:640px}
+.titulo-secao{font:500 20px var(--fonte-serif);color:#eedcb4;margin:0 0 14px}
+.estante{list-style:none;padding:0;margin:0;display:grid;gap:10px;position:relative}
+.estante:before{content:'';position:absolute;left:24px;top:20px;bottom:20px;width:1px;background:linear-gradient(180deg,transparent,#c9a96766 10%,#c9a96766 90%,transparent)}
+.volume a{display:flex;gap:16px;align-items:flex-start;padding:16px 18px 16px 12px;border:1px solid var(--linha);border-radius:10px;background:linear-gradient(120deg,#15262ee0,#10212af2);color:inherit;position:relative;transition:transform .25s,border-color .25s,box-shadow .25s}
+.volume a:hover{transform:translateX(4px);border-color:#e1bd7a99;box-shadow:0 10px 24px #0007}
+.numero-volume{width:26px;height:26px;flex-shrink:0;display:grid;place-items:center;font:500 12px var(--fonte-serif);color:#1b1a14;background:linear-gradient(145deg,#f3d99a,#b98b44);border-radius:50%;position:relative;z-index:1;box-shadow:0 0 0 4px #10212a}
+.volume.estado-nao-estudada .numero-volume{background:#2a3a43;color:#c9a967;border:1px solid #c9a96766}
+.volume.estado-dominio-demonstrado .numero-volume{background:linear-gradient(145deg,#9fe0c0,#3f8f72);color:#0d2a20}
+.volume.estado-precisa-revisao .numero-volume{background:linear-gradient(145deg,#f6c6ab,#c07a4d)}
+.texto-volume{flex:1;min-width:0}
+.texto-volume strong{display:block;font:500 17px/1.25 var(--fonte-serif);color:#f0e1bd;margin-bottom:5px}
+.texto-volume small{display:block;font-size:12.5px;line-height:1.55;color:#b4c3c5}
+.meta-volume{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.volume-revisao a{border-style:dashed}
+.lateral-disciplina{display:grid;gap:14px}
+.lateral-disciplina .cartao-caminho{margin-top:8px;padding:12px 14px}
+.lateral-disciplina .cartao-caminho strong{font-size:15px}
+.selo small{color:#a9bcc2}
+.selo .icone{color:var(--cor,#d1ad6c)}
+@media(max-width:700px){.sala{min-height:0;padding:16px 16px 16px 26px}.icone-sala{width:44px;height:44px}.texto-sala strong{font-size:18px}.estante:before{display:none}.volume a{padding:14px}.cabecalho-disciplina .titulo-disciplina{gap:12px}.emblema-disciplina{width:52px;height:52px}}

@@ -1,0 +1,319 @@
+{
+ "autoria": "Renan | renancodando",
+ "titulo": "Ecologia e evolução: relações que moldam a vida",
+ "resumo": "Nenhuma espécie vive isolada. Nesta aula você acompanha o fluxo de energia pelas cadeias alimentares, simula populações de presas e predadores, vê a seleção natural agir sobre a variação de uma população e aprende a distinguir fato, modelo e interpretação em biologia evolutiva.",
+ "duracao": 35,
+ "nivel": 2,
+ "objetivos": [
+  "Descrever cadeias e teias alimentares e o fluxo de energia entre níveis tróficos.",
+  "Explicar por que populações de presas e predadores oscilam.",
+  "Enunciar os componentes da seleção natural: variação, hereditariedade e reprodução diferencial.",
+  "Diferenciar adaptação de uso proposital e evitar explicações finalistas.",
+  "Reconhecer evidências da evolução e seus limites de interpretação."
+ ],
+ "prerequisitos": [
+  "vida/genetica"
+ ],
+ "conceitos": [
+  {
+   "id": "cadeia-alimentar",
+   "nome": "Cadeia e teia alimentar",
+   "definicao": "Sequência de quem come quem: produtores, consumidores primários, secundários e decompositores. Na teia, as cadeias se cruzam, porque a maioria dos organismos tem mais de uma fonte de alimento."
+  },
+  {
+   "id": "nivel-trofico",
+   "nome": "Nível trófico e fluxo de energia",
+   "definicao": "Posição na cadeia alimentar. A cada nível, apenas cerca de 10% da energia é transferida; o resto se perde como calor e em processos vitais. Por isso há poucos predadores de topo."
+  },
+  {
+   "id": "dinamica-populacional",
+   "nome": "Dinâmica populacional",
+   "definicao": "Variação do tamanho de uma população pela interação entre natalidade, mortalidade, recursos e outras espécies. Presas e predadores tendem a oscilar com atraso."
+  },
+  {
+   "id": "selecao-natural",
+   "nome": "Seleção natural",
+   "definicao": "Mecanismo da evolução proposto por Darwin e Wallace: em uma população variável, os indivíduos cujas características herdáveis favorecem a sobrevivência e a reprodução deixam mais descendentes, e essas características se tornam mais comuns."
+  },
+  {
+   "id": "adaptacao",
+   "nome": "Adaptação",
+   "definicao": "Característica herdável que aumenta a chance de sobrevivência e reprodução em um ambiente. Surge pela seleção de variações preexistentes, não pela necessidade ou pelo uso."
+  },
+  {
+   "id": "evidencias-evolucao",
+   "nome": "Evidências da evolução",
+   "definicao": "Fósseis, semelhanças anatômicas e embrionárias, estruturas vestigiais, distribuição geográfica e, sobretudo, semelhanças no DNA entre espécies."
+  }
+ ],
+ "relacionados": [
+  "vida/fotossintese",
+  "vida/genetica",
+  "geografia/clima-biomas",
+  "humanidades/conhecimento-ciencia"
+ ],
+ "laboratorios": [],
+ "blocos": [
+  {
+   "tipo": "texto",
+   "titulo": "Quem come quem, e quanto sobra",
+   "html": "<p>A energia entra na biosfera pela fotossíntese dos <strong>produtores</strong>. Herbívoros (consumidores primários) comem plantas; carnívoros (secundários e terciários) comem outros animais; <strong>decompositores</strong> (fungos e bactérias) devolvem ao solo os nutrientes de tudo que morre. Desenhada em linha, é uma cadeia; na realidade, com dezenas de espécies comendo várias outras, é uma <strong>teia</strong>.</p><p>A energia, porém, não circula: flui e se dissipa. De toda a energia que uma planta armazena, só cerca de 10% vira tecido do herbívoro que a come; o resto é gasto em respiração, movimento e calor. Do herbívoro ao carnívoro, outros 90% se perdem. Por isso uma savana tem toneladas de capim, muitos antílopes e poucos leões, e por isso cadeias raramente passam de quatro ou cinco níveis.</p>"
+  },
+  {
+   "tipo": "destaque",
+   "variante": "exemplo",
+   "titulo": "A conta dos 10%",
+   "html": "<p>Se um campo produz 10 000 kJ de energia vegetal por metro quadrado ao ano, os herbívoros incorporam cerca de 1 000 kJ, os carnívoros 100 kJ e um predador de topo, 10 kJ. Alimentar-se mais perto da base da cadeia é, energeticamente, muito mais eficiente.</p>"
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Populações que sobem e descem",
+   "html": "<p>Quando as presas abundam, os predadores comem bem e se reproduzem; com mais predadores, as presas diminuem; com menos presas, os predadores passam fome e diminuem; com menos predadores, as presas se recuperam. O resultado são <strong>oscilações</strong> em que os picos de predadores seguem os picos de presas com atraso. Registros históricos de peles de lebres e linces no Canadá mostram ciclos assim, embora o clima e a vegetação também participem.</p><p>Modelos matemáticos como o de Lotka e Volterra reproduzem essas oscilações com poucas equações. Eles ignoram muita coisa (doenças, migrações, outras espécies), mas ensinam algo importante: a dinâmica de uma população é um efeito das interações, não uma propriedade da espécie.</p>"
+  },
+  {
+   "tipo": "interativo",
+   "etapa": "explorar",
+   "componente": "populacoes",
+   "titulo": "Presas e predadores",
+   "instrucao": "Aumente a mortalidade dos predadores até que desapareçam. Depois reduza a capacidade do ambiente e observe as oscilações mudarem. Em que condições as populações se estabilizam?"
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Como a seleção natural funciona",
+   "html": "<p>Darwin e Wallace perceberam três fatos. Primeiro, indivíduos de uma população <strong>variam</strong>: tamanho, cor, resistência. Segundo, parte dessa variação é <strong>herdável</strong>. Terceiro, nascem mais indivíduos do que o ambiente sustenta, e os que têm características mais favoráveis <strong>sobrevivem e se reproduzem mais</strong>. A consequência é inevitável: as características favoráveis ficam mais frequentes a cada geração. Isso é a seleção natural.</p><p>Não há intenção nem esforço envolvido. A girafa não esticou o pescoço; girafas com pescoços um pouco mais longos, por variação ao acaso, alcançaram mais folhas e deixaram mais filhotes. Dizer que uma espécie “desenvolveu” uma característica “para” algo é um atalho de linguagem perigoso: a característica apareceu por variação e foi mantida porque funcionou.</p>"
+  },
+  {
+   "tipo": "interativo",
+   "etapa": "explorar",
+   "componente": "selecao-natural",
+   "titulo": "Selecione sem escolher",
+   "instrucao": "A população começa variada. Avance dez gerações e veja a média de cor se aproximar do ambiente. Depois mude a cor do ambiente: a população acompanha? Zere a mutação e observe o que acontece com a diversidade."
+  },
+  {
+   "tipo": "destaque",
+   "variante": "interpretacao",
+   "titulo": "Fato, modelo e interpretação",
+   "html": "<p>Que as espécies mudam ao longo do tempo e descendem de ancestrais comuns é fato apoiado por fósseis, anatomia e, de modo decisivo, pelo DNA. A seleção natural é o mecanismo central, bem demonstrado em laboratório e na natureza (bactérias resistentes a antibióticos, bicos de tentilhões). Modelos como a simulação acima são simplificações didáticas. Afirmações sobre “superioridade” de espécies ou sobre a evolução ter um objetivo são interpretações sem base: a evolução não tem direção nem meta, só ambientes e histórias.</p>"
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Evidências que convergem",
+   "html": "<p>Fósseis mostram formas que não existem mais e sequências de mudança, como as dos ancestrais das baleias, com membros posteriores que encolhem ao longo de milhões de anos. Ossos do braço humano, da asa do morcego e da nadadeira da baleia têm o mesmo plano, com funções diferentes: herança de um ancestral comum. Embriões de vertebrados são surpreendentemente parecidos. E o DNA registra tudo: humanos e chimpanzés compartilham quase 99% das sequências codificadoras; humanos e bananas compartilham genes básicos do metabolismo celular, herdados de um ancestral comum muito antigo.</p>"
+  },
+  {
+   "tipo": "pergunta",
+   "enunciado": "Antibióticos usados em excesso selecionam bactérias resistentes. Explique com os três componentes da seleção natural.",
+   "resposta": "<p>Variação: em qualquer população de bactérias, algumas carregam mutações que conferem resistência. Hereditariedade: a resistência passa às descendentes. Reprodução diferencial: na presença do antibiótico, as sensíveis morrem e as resistentes se multiplicam, dominando a população. O antibiótico não cria a resistência; seleciona a que já existia.</p>"
+  }
+ ],
+ "exercicios": [
+  {
+   "id": "e1",
+   "tipo": "numerica",
+   "conceito": "nivel-trofico",
+   "enunciado": "<p>Em um ecossistema, os produtores armazenam 50 000 kJ por ano em uma área. Considerando a transferência de 10% por nível, quanta energia chega aos consumidores secundários?</p>",
+   "resposta": 500,
+   "tolerancia": 1,
+   "unidade": "kJ",
+   "feedback": {
+    "correta": "Produtores 50 000 → primários 5 000 → secundários 500 kJ.",
+    "faixas": [
+     {
+      "min": 4999,
+      "max": 5001,
+      "texto": "5 000 kJ é o que chega aos consumidores primários. Os secundários estão um nível acima."
+     },
+     {
+      "min": 49,
+      "max": 51,
+      "texto": "50 kJ seria o terceiro nível de consumidores (terciários). Conte os níveis a partir dos produtores."
+     }
+    ]
+   },
+   "dicas": [
+    "Cada nível recebe 10% do anterior.",
+    "Produtores → primários → secundários: dois passos."
+   ]
+  },
+  {
+   "id": "e2",
+   "tipo": "ordenacao",
+   "conceito": "dinamica-populacional",
+   "enunciado": "<p>Ordene a sequência de um ciclo presa-predador a partir de um momento em que as presas são abundantes.</p>",
+   "itens": [
+    "Com muitas presas, os predadores se alimentam bem e sua população cresce",
+    "Com mais predadores, a população de presas diminui",
+    "Com menos presas, os predadores passam fome e diminuem",
+    "Com menos predadores, as presas voltam a crescer"
+   ],
+   "feedback": {
+    "correta": "Cada mudança em uma população causa, com atraso, uma mudança na outra: por isso as oscilações.",
+    "incorreta": "Siga a lógica de causa e efeito: o que muda primeiro quando há muitas presas?"
+   },
+   "dicas": [
+    "Predadores respondem às presas com atraso.",
+    "O ciclo fecha quando as presas se recuperam."
+   ]
+  },
+  {
+   "id": "e3",
+   "tipo": "multipla-escolha",
+   "conceito": "selecao-natural",
+   "enunciado": "<p>Qual frase descreve corretamente a seleção natural?</p>",
+   "opcoes": [
+    "Os organismos desenvolvem as características de que precisam para sobreviver",
+    "Características adquiridas pelo uso são transmitidas aos descendentes",
+    "Indivíduos com variações herdáveis favoráveis deixam mais descendentes, e essas variações se tornam mais comuns",
+    "A espécie mais forte sempre elimina as demais"
+   ],
+   "correta": 2,
+   "feedback": {
+    "correta": "Variação, hereditariedade e reprodução diferencial: os três componentes.",
+    "incorreta": "A seleção não cria características sob demanda nem transmite o que foi adquirido pelo uso.",
+    "porOpcao": {
+     "0": "Isso é finalismo: a necessidade não gera a variação; a variação já existe e é selecionada.",
+     "1": "A herança de caracteres adquiridos (lamarckismo) não ocorre: músculos desenvolvidos não passam aos filhos.",
+     "3": "“Mais forte” não é o critério; o que importa é deixar descendentes no ambiente em questão. Espécies coexistem o tempo todo."
+    }
+   },
+   "dicas": [
+    "Procure a frase que fala de variação já existente e de reprodução.",
+    "Evite explicações com “para” ou “precisa”."
+   ]
+  },
+  {
+   "id": "e4",
+   "tipo": "identificar-erro",
+   "conceito": "adaptacao",
+   "enunciado": "<p>Uma das frases abaixo contém um erro conceitual sobre evolução. Selecione-a.</p>",
+   "linhas": [
+    "Em uma população de mariposas, algumas nascem mais escuras por variação genética.",
+    "Em troncos escurecidos pela fuligem, pássaros veem menos as mariposas escuras.",
+    "As mariposas escuras sobrevivem mais e deixam mais descendentes.",
+    "As mariposas claras perceberam o perigo e escureceram para se proteger.",
+    "Após gerações, a maioria da população é escura."
+   ],
+   "erro": 3,
+   "feedback": {
+    "porLinha": {
+     "0": "A variação ao acaso é o ponto de partida correto.",
+     "1": "A predação diferencial é o agente seletivo.",
+     "2": "Reprodução diferencial: correto.",
+     "4": "Consequência correta do processo."
+    }
+   },
+   "explicacao": "Indivíduos não mudam de cor por perceber perigo; a mudança ocorre na frequência da população, ao longo de gerações, porque os escuros já existentes sobrevivem mais. A frase atribui intenção e mudança individual, o que é finalismo.",
+   "dicas": [
+    "Procure a frase que atribui intenção ou mudança individual.",
+    "A seleção age sobre a população, não transforma indivíduos."
+   ]
+  },
+  {
+   "id": "e5",
+   "tipo": "associacao",
+   "conceito": "evidencias-evolucao",
+   "enunciado": "<p>Associe cada evidência ao que ela mostra.</p>",
+   "pares": [
+    [
+     "Ossos do braço humano e da asa do morcego com o mesmo plano",
+     "Ancestralidade comum (homologia)"
+    ],
+    [
+     "Fósseis de ancestrais de baleias com membros posteriores reduzidos",
+     "Mudança gradual ao longo do tempo"
+    ],
+    [
+     "Alta semelhança entre o DNA de humanos e chimpanzés",
+     "Parentesco próximo entre espécies"
+    ],
+    [
+     "Bactérias que se tornam resistentes a antibióticos em poucos anos",
+     "Seleção natural observada diretamente"
+    ]
+   ],
+   "feedback": {
+    "correta": "Evidências independentes (anatomia, fósseis, DNA, observação direta) convergem para a mesma conclusão.",
+    "incorreta": "Pense no tipo de informação que cada evidência fornece: estrutura, tempo, genética ou processo em ação."
+   },
+   "dicas": [
+    "Homologia é semelhança de estrutura por herança.",
+    "O DNA mede parentesco."
+   ]
+  },
+  {
+   "id": "e6",
+   "tipo": "resposta-aberta",
+   "conceito": "cadeia-alimentar",
+   "enunciado": "<p>Em uma ilha, caçadores eliminaram todos os predadores de uma espécie de cervo. Preveja o que acontece com os cervos e com a vegetação ao longo de alguns anos, usando os conceitos da aula.</p>",
+   "criterios": [
+    "Prevê o crescimento inicial da população de cervos sem predadores",
+    "Relaciona o excesso de cervos ao esgotamento da vegetação (capacidade do ambiente)",
+    "Prevê fome, queda da população ou dano duradouro ao ecossistema",
+    "Usa corretamente pelo menos um conceito: capacidade do ambiente, nível trófico ou dinâmica populacional"
+   ],
+   "exemplo": "<p>Sem predadores, a população de cervos cresce rapidamente porque a mortalidade cai. Com mais cervos, a vegetação é consumida além da sua capacidade de regeneração; a capacidade do ambiente é ultrapassada. A fome passa então a limitar a população, que pode cair bruscamente, e a vegetação pode levar anos para se recuperar, afetando outras espécies da teia.</p>",
+   "minimoPalavras": 40,
+   "dicas": [
+    "Comece pela mortalidade dos cervos.",
+    "Depois pense no recurso que os sustenta."
+   ]
+  }
+ ],
+ "pratica": {
+  "titulo": "Experimentar a seleção com variáveis controladas",
+  "descricao": "<p>Use a simulação de seleção natural para testar hipóteses. Registre nas anotações a cor média da população a cada 10 gerações em três cenários e escreva o que cada um ensina.</p>",
+  "passos": [
+   "Cenário 1: ambiente 80, pressão 0,5, mutação 3. Avance 30 gerações registrando a média a cada 10.",
+   "Cenário 2: mesma configuração, mas pressão 0 (sem predadores). A média muda?",
+   "Cenário 3: ambiente 80, pressão 0,8, mutação 0. Avance 30 gerações e observe a diversidade (histograma).",
+   "Escreva uma conclusão sobre o papel da pressão seletiva e da variação."
+  ],
+  "componente": "selecao-natural",
+  "verificacao": {
+   "tipo": "checklist",
+   "itens": [
+    "Registrei a média em 10, 20 e 30 gerações no cenário com pressão 0,5.",
+    "Observei que sem pressão seletiva a média não se aproxima do ambiente de forma consistente.",
+    "Observei a perda de diversidade com mutação zero.",
+    "Escrevi a conclusão sobre pressão seletiva e variação."
+   ]
+  }
+ },
+ "revisao": [
+  {
+   "pergunta": "Por que há poucos predadores de topo em um ecossistema?",
+   "resposta": "<p>Porque só cerca de 10% da energia passa de um nível trófico ao seguinte; depois de poucos níveis, resta pouca energia.</p>",
+   "conceito": "nivel-trofico"
+  },
+  {
+   "pergunta": "Por que populações de presas e predadores oscilam?",
+   "resposta": "<p>Porque cada uma responde à outra com atraso: mais presas geram mais predadores, que reduzem as presas, o que reduz os predadores, e assim por diante.</p>",
+   "conceito": "dinamica-populacional"
+  },
+  {
+   "pergunta": "Quais são os três componentes da seleção natural?",
+   "resposta": "<p>Variação entre indivíduos, hereditariedade dessa variação e reprodução diferencial dos mais adaptados ao ambiente.</p>",
+   "conceito": "selecao-natural"
+  },
+  {
+   "pergunta": "Por que é errado dizer que uma espécie “desenvolveu” uma característica “para” algo?",
+   "resposta": "<p>Porque a característica surge por variação ao acaso e é mantida porque funcionou; não há intenção nem necessidade gerando a mudança.</p>",
+   "conceito": "adaptacao"
+  },
+  {
+   "pergunta": "Cite três tipos de evidência da evolução.",
+   "resposta": "<p>Fósseis, homologias anatômicas e semelhanças no DNA entre espécies (também embriologia e distribuição geográfica).</p>",
+   "conceito": "evidencias-evolucao"
+  }
+ ],
+ "material": [
+  {
+   "titulo": "Aula “Genética e hereditariedade”",
+   "descricao": "a variação herdável é o que a seleção natural precisa."
+  },
+  {
+   "titulo": "Aula “Conhecimento e ciência”",
+   "descricao": "como uma teoria científica se sustenta em evidências convergentes."
+  }
+ ]
+}

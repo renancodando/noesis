@@ -1,0 +1,9 @@
+/* Renan | renancodando */
+.pagina-configuracoes .linha-configuracao{padding:12px 0}
+.pagina-configuracoes .linha-configuracao label{font-size:13.5px}
+.pagina-configuracoes .linha-configuracao select{width:150px;margin:0}
+.pagina-configuracoes .linha-configuracao input[type=checkbox]{appearance:none;width:39px;height:22px;border:1px solid #a2bdc24d;border-radius:22px;padding:3px;background:#0d2129;cursor:pointer;position:relative;margin:0}
+.pagina-configuracoes .linha-configuracao input[type=checkbox]:after{content:'';display:block;width:14px;height:14px;border-radius:50%;background:#83a0a8;transition:translate .2s}
+.pagina-configuracoes .linha-configuracao input[type=checkbox]:checked{background:#8d7139;border-color:#d4b575}
+.pagina-configuracoes .linha-configuracao input[type=checkbox]:checked:after{translate:16px 0;background:#f1dcaa}
+.zona-perigo{border-color:#d47a7255}
