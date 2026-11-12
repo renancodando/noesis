@@ -46,8 +46,10 @@ export function montarRelevo(area,parametros={},contexto={}){
   const mapaL=L*.62,cel=mapaL/N,celA=A/N;const intervalo=controles.intervalo.valor,agua=controles.agua.valor;
   let max=0;alturas.forEach(l=>l.forEach(v=>max=Math.max(max,v)));
   for(let j=0;j<N;j++)for(let i=0;i<N;i++){const h=alturas[j][i];c.fillStyle=h<=agua?'#1f4a6a':`hsl(${100-h/max*70} ${35+h/max*20}% ${25+h/max*40}%)`;c.fillRect(i*cel,j*celA,cel+.5,celA+.5);}
-  c.strokeStyle='#1b1a1488';c.lineWidth=1;
-  for(let j=0;j<N-1;j++)for(let i=0;i<N-1;i++){const h=alturas[j][i];for(let n=intervalo;n<=max;n+=intervalo){const cruza=(h-n)*(alturas[j][i+1]-n)<0||(h-n)*(alturas[j+1][i]-n)<0;if(cruza){c.beginPath();c.moveTo(i*cel+cel/2,j*celA);c.lineTo(i*cel+cel/2,j*celA+celA);c.stroke();break;}}}
+  c.lineWidth=1;
+  for(let n=intervalo;n<=max;n+=intervalo){c.strokeStyle=n%(intervalo*5)===0?'#1b1a14cc':'#1b1a1466';c.beginPath();
+   for(let j=0;j<N-1;j++)for(let i=0;i<N-1;i++){const v=[alturas[j][i],alturas[j][i+1],alturas[j+1][i+1],alturas[j+1][i]];const p=[[i,j],[i+1,j],[i+1,j+1],[i,j+1]];const pontos=[];for(let k=0;k<4;k++){const a=v[k],b2=v[(k+1)%4];if((a-n)*(b2-n)<0){const t=(n-a)/(b2-a);const x=p[k][0]+(p[(k+1)%4][0]-p[k][0])*t,y=p[k][1]+(p[(k+1)%4][1]-p[k][1])*t;pontos.push([x*cel,y*celA]);}}if(pontos.length>=2){c.moveTo(pontos[0][0],pontos[0][1]);c.lineTo(pontos[1][0],pontos[1][1]);if(pontos.length===4){c.moveTo(pontos[2][0],pontos[2][1]);c.lineTo(pontos[3][0],pontos[3][1]);}}}
+   c.stroke();}
   if(perfil){c.strokeStyle='#f1dca6';c.lineWidth=2;c.beginPath();c.moveTo(perfil.x0*cel,perfil.y0*celA);c.lineTo(perfil.x1*cel,perfil.y1*celA);c.stroke();
    const gx=L*.66,gl=L-gx-10,gy=30,ga=A-60;c.fillStyle='#071219';c.fillRect(gx,gy,gl,ga);c.strokeStyle='#1d3340';c.strokeRect(gx,gy,gl,ga);
    const pontos=[];for(let t=0;t<=60;t++){const i=Math.round(perfil.x0+(perfil.x1-perfil.x0)*t/60),j=Math.round(perfil.y0+(perfil.y1-perfil.y0)*t/60);pontos.push(alturas[Math.max(0,Math.min(N-1,j))][Math.max(0,Math.min(N-1,i))]);}

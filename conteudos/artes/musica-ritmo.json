@@ -1,0 +1,68 @@
+{
+ "autoria": "Renan | renancodando",
+ "titulo": "Música: pulso, compasso e ritmo",
+ "resumo": "Ritmo é a organização do tempo em som. Nesta aula você aprende a sentir o pulso e medir o andamento, a agrupar tempos em compassos, a dividir o tempo em figuras, a reconhecer tempos fortes, contratempos e síncopes, e cria padrões rítmicos num sequenciador que toca no próprio navegador.",
+ "duracao": 30,
+ "nivel": 1,
+ "objetivos": [
+  "Distinguir pulso, andamento e ritmo.",
+  "Calcular a duração de um tempo e de um compasso a partir do andamento em bpm.",
+  "Identificar compassos de 2, 3 e 4 tempos e seus tempos fortes.",
+  "Relacionar semínima, colcheia e semicolcheia como divisões do tempo.",
+  "Reconhecer e criar contratempos e síncopes."
+ ],
+ "prerequisitos": [],
+ "conceitos": [
+  {"id": "pulso-andamento", "nome": "Pulso e andamento", "definicao": "Pulso é a batida regular que sentimos ao bater o pé; andamento é a velocidade do pulso, medida em batidas por minuto (bpm)."},
+  {"id": "compasso", "nome": "Compasso", "definicao": "Agrupamento regular de pulsos com um tempo forte no início: compassos de 2, 3 ou 4 tempos são os mais comuns na música ocidental."},
+  {"id": "figuras", "nome": "Figuras de duração", "definicao": "Símbolos que indicam durações relativas: se a semínima vale um tempo, a colcheia vale meio e a semicolcheia um quarto; a mínima vale dois tempos."},
+  {"id": "forte-fraco", "nome": "Tempos fortes e fracos", "definicao": "No compasso, o primeiro tempo é o mais acentuado (forte); os demais são fracos ou meio-fortes, criando o padrão que diferencia uma valsa de uma marcha."},
+  {"id": "sincope", "nome": "Contratempo e síncope", "definicao": "Contratempo é acentuar a metade fraca do tempo; síncope é prolongar um som iniciado em parte fraca sobre a parte forte seguinte, deslocando o acento esperado."},
+  {"id": "ritmo-cultura", "nome": "Ritmo como linguagem", "definicao": "Cada gênero musical tem padrões rítmicos característicos: o samba acentua o segundo tempo e usa síncopes, a valsa marca o primeiro de três, o rock marca a caixa nos tempos 2 e 4."}
+ ],
+ "relacionados": ["exatas/aritmetica", "exatas/fisica", "artes/narrativa-visual", "tecnologia/javascript"],
+ "laboratorios": [],
+ "blocos": [
+  {"tipo": "texto", "titulo": "Sentir antes de contar", "html": "<p>Ouça qualquer música e bata o pé: a batida regular que você encontra é o <strong>pulso</strong>. A velocidade do pulso é o <strong>andamento</strong>, medido em batidas por minuto: 60 bpm é uma batida por segundo, 120 bpm são duas. O <strong>ritmo</strong> é o desenho de durações e acentos que acontece sobre esse pulso: duas músicas podem ter o mesmo andamento e ritmos completamente diferentes. Pulso é a grade; ritmo é o que se escreve nela.</p>"},
+  {"tipo": "equacao", "titulo": "Duração do tempo", "texto": "duração de um tempo (s) = 60 ÷ bpm", "legenda": "A 120 bpm, cada tempo dura 0,5 s; um compasso de 4 tempos dura 2 s. A 90 bpm, cada tempo dura 0,667 s."},
+  {"tipo": "texto", "titulo": "Agrupar: o compasso", "html": "<p>Não sentimos os pulsos todos iguais: agrupamos em <strong>compassos</strong>, com um pulso mais forte no início. Agrupar de dois em dois dá uma marcha (UM-dois, UM-dois); de três em três, uma valsa (UM-dois-três); de quatro em quatro, a base da maior parte da música popular (UM-dois-três-quatro, com o três um pouco mais forte que dois e quatro). O compasso é indicado no início da partitura por uma fração: o número de cima diz quantos tempos há; o de baixo, qual figura vale um tempo (4 significa a semínima).</p>"},
+  {"tipo": "tabela", "titulo": "Figuras e divisões do tempo", "cabecalho": ["Figura", "Valor (semínima = 1 tempo)", "Em um compasso de 4 tempos cabem"], "linhas": [["Semibreve", "4 tempos", "1"], ["Mínima", "2 tempos", "2"], ["Semínima", "1 tempo", "4"], ["Colcheia", "½ tempo", "8"], ["Semicolcheia", "¼ de tempo", "16"]]},
+  {"tipo": "interativo", "etapa": "explorar", "componente": "ritmo", "titulo": "Sequenciador de ritmo", "instrucao": "Cada coluna é uma semicolcheia; os números marcam o início de cada tempo. Carregue o padrão Rock e ouça a caixa nos tempos 2 e 4. Troque para o Samba simplificado e perceba as batidas fora das divisões principais. Depois limpe e crie um padrão seu em 3 tempos.", "parametros": {"nota": "Os sons são sintetizados no navegador (um oscilador grave para o bumbo, ruído filtrado para caixa e chimbal). O padrão de samba é uma simplificação didática em dezesseis semicolcheias."}},
+  {"tipo": "texto", "titulo": "Deslocar o acento", "html": "<p>Se todas as batidas caem nos tempos fortes, o ritmo é quadrado e previsível. Dois recursos criam balanço. O <strong>contratempo</strong> acentua a metade fraca do tempo: o “e” de “um-e-dois-e”. A <strong>síncope</strong> começa um som numa parte fraca e o prolonga sobre a parte forte seguinte, de modo que o acento esperado não acontece onde o ouvido previa. O samba, o jazz, o funk e boa parte da música africana e afro-americana são construídos sobre esses deslocamentos; o ouvinte sente o pulso justamente porque ele é contrariado.</p>"},
+  {"tipo": "destaque", "variante": "exemplo", "titulo": "Três padrões, três gêneros", "html": "<p>Rock básico: bumbo nos tempos 1 e 3, caixa nos tempos 2 e 4, chimbal em todas as colcheias. Valsa: bumbo no 1, caixa no 2 e no 3, em compasso de três. Samba (simplificado): bumbo marcando o segundo tempo com mais peso e caixa em semicolcheias deslocadas, com síncopes constantes. Mesmo andamento, sensações opostas.</p>"},
+  {"tipo": "pergunta", "enunciado": "Uma música a 100 bpm em compasso de 4 tempos dura 3 minutos. Quantos compassos ela tem, aproximadamente?", "resposta": "<p>100 bpm em 3 minutos são 300 pulsos; em grupos de 4, 75 compassos (se o andamento for constante e não houver introdução fora do compasso).</p>"}
+ ],
+ "exercicios": [
+  {"id": "e1", "tipo": "numerica", "conceito": "pulso-andamento", "enunciado": "<p>Quanto dura um tempo, em segundos, a 80 bpm?</p>", "resposta": 0.75, "tolerancia": 0.005, "unidade": "s", "feedback": {"correta": "60 ÷ 80 = 0,75 s por tempo.", "faixas": [{"min": 1.32, "max": 1.34, "texto": "Você dividiu 80 por 60; a duração é 60 ÷ bpm."}, {"min": 0.79, "max": 0.81, "texto": "0,8 seria para 75 bpm; refaça 60 ÷ 80."}]}, "dicas": ["Segundos por batida = 60 ÷ batidas por minuto.", "60 ÷ 80."]},
+  {"id": "e2", "tipo": "problema", "conceito": "compasso", "enunciado": "<p>Uma faixa está a 120 bpm em compasso de 3 tempos e tem 48 compassos.</p>", "etapas": [{"enunciado": "Quanto dura um compasso, em segundos?", "rotulo": "compasso", "unidade": "s", "resposta": 1.5, "tolerancia": 0.01, "explicacao": "60 ÷ 120 = 0,5 s por tempo; 3 tempos = 1,5 s.", "feedback": "Calcule a duração do tempo e multiplique por 3."}, {"enunciado": "Quanto dura a faixa inteira, em segundos?", "rotulo": "total", "unidade": "s", "resposta": 72, "tolerancia": 0.1, "explicacao": "48 × 1,5 = 72 s.", "feedback": "Compassos vezes duração de cada um."}, {"enunciado": "Quantas colcheias cabem na faixa inteira?", "rotulo": "colcheias", "resposta": 288, "tolerancia": 0, "explicacao": "48 compassos × 3 tempos × 2 colcheias por tempo = 288.", "feedback": "Cada tempo tem duas colcheias."}], "feedback": {"correta": "Do andamento às figuras: tudo é proporção."}, "dicas": ["Primeiro o tempo, depois o compasso, depois a faixa.", "Colcheia é metade do tempo."]},
+  {"id": "e3", "tipo": "lacunas", "conceito": "figuras", "enunciado": "<p>Complete as relações entre figuras.</p>", "texto": "Se a semínima vale um tempo, a mínima vale {{a}} tempos, a colcheia vale {{b}} tempo e em um tempo cabem {{c}} semicolcheias.", "lacunas": {"a": ["2", "dois"], "b": ["meio", "1/2", "0,5"], "c": ["4", "quatro"]}, "banco": ["2", "meio", "4", "3", "8"], "feedback": {"correta": "Cada figura vale metade da anterior: 4, 2, 1, ½, ¼.", "incorreta": "Mínima é o dobro da semínima; cada divisão seguinte reduz à metade."}, "dicas": ["Mínima = 2 semínimas.", "Semicolcheia = metade da colcheia."]},
+  {"id": "e4", "tipo": "verdadeiro-falso", "conceito": "forte-fraco", "enunciado": "<p>Julgue as afirmações.</p>", "afirmacoes": [{"texto": "Em um compasso de 4 tempos, o primeiro tempo é o mais forte.", "valor": true, "explicacao": "É o que define o início do compasso."}, {"texto": "Duas músicas com o mesmo andamento têm necessariamente o mesmo ritmo.", "valor": false, "explicacao": "Andamento é a velocidade do pulso; ritmo é o desenho sobre ele."}, {"texto": "A valsa agrupa os pulsos de três em três.", "valor": true, "explicacao": "UM-dois-três."}, {"texto": "Acentuar sempre e apenas os tempos fortes produz síncope.", "valor": false, "explicacao": "Síncope é justamente deslocar o acento para fora do esperado."}], "feedback": {"correta": "Forte no início, andamento não é ritmo, valsa em três, síncope desloca.", "incorreta": "Separe andamento (velocidade) de ritmo (desenho) e lembre que síncope contraria o esperado."}, "dicas": ["Compasso começa no forte.", "Síncope surpreende o ouvido."]},
+  {"id": "e5", "tipo": "multipla-escolha", "conceito": "sincope", "enunciado": "<p>Num compasso contado “um-e-dois-e-três-e-quatro-e”, um músico toca apenas nos “e”. O que ele está fazendo?</p>", "opcoes": ["Tocando em contratempo", "Tocando nos tempos fortes", "Mudando o andamento", "Tocando em compasso de três"], "correta": 0, "feedback": {"correta": "Os “e” são as metades fracas de cada tempo: contratempo.", "incorreta": "Os números são os tempos; os “e” estão entre eles.", "porOpcao": {"1": "Os tempos fortes são os números, não os “e”.", "2": "A velocidade do pulso não mudou.", "3": "Continuam sendo quatro tempos."}}, "dicas": ["“E” é o meio do tempo.", "Contratempo = acento na metade fraca."]},
+  {"id": "e6", "tipo": "resposta-aberta", "conceito": "ritmo-cultura", "enunciado": "<p>Escolha uma música que você conheça bem. Descreva seu andamento aproximado (lento, médio, rápido, ou em bpm se souber contar), o compasso, onde caem os acentos principais e se há contratempos ou síncopes. Depois explique como o ritmo contribui para a sensação da música.</p>", "criterios": ["Estima o andamento e indica como chegou à estimativa", "Identifica o compasso (2, 3 ou 4 tempos) com justificativa", "Localiza acentos e aponta contratempos ou síncopes, se houver", "Relaciona o ritmo à sensação ou função da música (dançar, marchar, embalar)"], "exemplo": "<p>A música tem andamento médio, perto de 95 bpm (contei as batidas em 15 segundos e multipliquei por quatro). O compasso é de quatro tempos: a caixa cai sempre no 2 e no 4, e o baixo marca o 1. O violão toca em contratempo, nos “e”, o que dá o balanço. Sem esse contratempo, a música soaria como marcha; com ele, pede para dançar.</p>", "minimoPalavras": 60, "dicas": ["Conte batidas em 15 s e multiplique por 4.", "Caixa em 2 e 4 é um sinal de quatro tempos."]}
+ ],
+ "pratica": {
+  "titulo": "Do quadrado ao balanço",
+  "descricao": "<p>No sequenciador, crie três padrões em 4 tempos, a 100 bpm: um só com tempos fortes (quadrado), um com chimbal em contratempo e um com pelo menos duas síncopes. Ouça os três em sequência e escreva nas anotações, para cada um, uma palavra que descreva a sensação e um gênero ou uso em que ele caberia. Por fim, crie um padrão em 3 tempos.</p>",
+  "passos": [
+   "Padrão 1: bumbo e caixa apenas nos números (tempos fortes).",
+   "Padrão 2: acrescente chimbal nos “e” (contratempo).",
+   "Padrão 3: desloque pelo menos duas batidas para posições ímpares (síncopes); o painel de leitura confirma.",
+   "Padrão 4: compasso de 3 tempos, à sua escolha."
+  ],
+  "componente": "ritmo",
+  "parametros": {"bpm": 100},
+  "verificacao": {"tipo": "checklist", "itens": ["Criei e ouvi o padrão só com tempos fortes.", "Criei o padrão com contratempo no chimbal.", "Criei um padrão com pelo menos duas síncopes, confirmadas pelo painel.", "Criei um padrão em 3 tempos e anotei as sensações dos quatro."]}
+ },
+ "revisao": [
+  {"pergunta": "Qual é a diferença entre pulso, andamento e ritmo?", "resposta": "<p>Pulso é a batida regular; andamento é sua velocidade em bpm; ritmo é o desenho de durações e acentos sobre o pulso.</p>", "conceito": "pulso-andamento"},
+  {"pergunta": "Quanto dura um tempo a 120 bpm?", "resposta": "<p>60 ÷ 120 = 0,5 segundo.</p>", "conceito": "pulso-andamento"},
+  {"pergunta": "O que indica a fração no início de uma partitura?", "resposta": "<p>Em cima, quantos tempos há no compasso; embaixo, qual figura vale um tempo.</p>", "conceito": "compasso"},
+  {"pergunta": "Quantas semicolcheias cabem em uma semínima?", "resposta": "<p>Quatro.</p>", "conceito": "figuras"},
+  {"pergunta": "O que é contratempo?", "resposta": "<p>Acentuar a metade fraca do tempo (os “e”).</p>", "conceito": "sincope"},
+  {"pergunta": "Onde cai a caixa no padrão básico de rock?", "resposta": "<p>Nos tempos 2 e 4.</p>", "conceito": "ritmo-cultura"}
+ ],
+ "material": [
+  {"titulo": "Aula “Aritmética”", "descricao": "frações e proporções que organizam as figuras rítmicas."},
+  {"titulo": "Aula “Física”", "descricao": "ondas e frequência: o que é som."}
+ ]
+}
